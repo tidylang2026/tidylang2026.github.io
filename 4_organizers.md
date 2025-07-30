@@ -118,7 +118,7 @@ title: Organizers
   <h2 class="organizer-name">Xin Cheng</h2>
   <div class="organizer-content">
     <div class="organizer-image">
-      <img src="../images/Xin_Cheng.png" alt="Xin Cheng">
+      <img src="../images/Xin_Cheng.jpg" alt="Xin Cheng">
     </div>
     <div class="organizer-bio">
       <p>Xin Cheng   is currently a master’s student in Artificial Intelligence at Renmin University of China. He has published several papers at conferences such as ICLR, AAAI, and ICASSP. His research focuses on speech synthesis, as well as audio and video understanding and generation.</p>
