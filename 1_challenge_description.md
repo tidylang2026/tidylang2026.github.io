@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Challenge description
+title: Challenge Description
 ---
 
 
