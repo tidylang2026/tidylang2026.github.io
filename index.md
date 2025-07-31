@@ -5,6 +5,8 @@ title: WildSpoof
 
 
 
+<img src="../images/WildSpoof.png" alt="WildSpoof Image" width="1000">
+
  
 
 # **WildSpoof**
