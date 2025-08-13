@@ -6,7 +6,7 @@ title: Important Dates
 
 
 - **Data release**: Open-sourced
-- **Evaluation plan release**: August 11, 2025
+- **Evaluation plan release**: August 15, 2025
 - **Challenge registration**: November 01, 2025
 - **Submission Deadline**: December 01,2025 (23:59 AoE)
 - **Results Announcement**: December 05, 2025
