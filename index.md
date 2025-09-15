@@ -43,7 +43,7 @@ The WildSpoof Challenge promotes research that bridges the gap between speech ge
 
 ## Challenge Tracks
 
-There are two tracks in the WildSpoof challenge. Participation is open to all. Each team can participate in either task or both.
+There are two tracks in the WildSpoof challenge. Participation is open to all. Each team can participate in either TTS or SASV task.
 
 #### **1. TTS Track**
 
