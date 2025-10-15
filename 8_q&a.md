@@ -16,3 +16,7 @@ Yes, it’s allowed.
 #### **3. Can participants join both tracks?**
 
 Each team can only participate in one track—either TTS or SASV. Participants cannot join both tracks at the same time.
+
+#### **4. Is the usage of Musan/RiR allowed?**
+
+Yes, it’s allowed.
