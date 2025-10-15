@@ -17,6 +17,7 @@ Yes, it’s allowed.
 
 Each team can only participate in one track—either TTS or SASV. Participants cannot join both tracks at the same time.
 
-#### **4. Is the usage of Musan/RiR allowed?**
+#### **4. Can MUSAN/RIR be used for data augmentation?**
 
-Yes, it’s allowed.
+Yes, the use of MUSAN/RIR is permitted for data augmentation.
+
