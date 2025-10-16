@@ -21,3 +21,7 @@ Each team can only participate in one track—either TTS or SASV. Participants c
 
 Yes, the use of MUSAN/RIR is permitted for data augmentation.
 
+#### **5. Is it allowed to use external dataset for SASV track?**
+
+The VoxCeleb2 dataset can be used as it doesn't overlap with SpoofCeleb test set. However, we do not allow any other external datasets in SASV track.
+
