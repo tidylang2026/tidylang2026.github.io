@@ -68,6 +68,10 @@ Yes, it’s acceptable as long as **no additional external datasets** are introd
 #### **Q14. How will the evaluation score be calculated?**
 Each **test utterance** will be paired with one **registration utterance**, following the provided **evaluation protocol** format (a list of <**enroll test_trial** > pairs).
 
+#### **Q15. Where can I download the evaluation data?**
+
+A link has been sent to all registered teams. Full evaluation data will be made public after the challenge closes. If you haven't received the link, please check the trash folder, or contact Yihan Wu (yihanwu@ruc.edu.cn).
+
 <br>
 
 # Contact
