@@ -22,3 +22,9 @@ title: Submission Guidelines
 - We will evaluate the SASV performance using the architecture-agnostic detection cost function (a-DCF), a newly proposed metric for this task that can be applied to both end-to-end and traditional fusion-based SASV frameworks.
 - No framework or model restriction in the SASV track. We will also release the baseline training scripts and the pre-trained baseline model.
 - Submission package details: a text file where each line contains an SASV model detection score for an evaluation utterance (zipped format).
+
+
+
+#### **3. General Problem**
+
+- Should any technical issues arise during the submission process, participants may alternatively submit their results via email. Please contact the organizers (Yihan Wu, yihanwu@ruc.edu.cn) for further assistance.
