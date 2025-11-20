@@ -1,25 +1,21 @@
 ---
 layout: default
-title: WildSpoof
+title: TidyVoice2026 Challenge
 ---
 
 
 
-<img src="../images/WildSpoof.png" alt="WildSpoof Image" width="1000">
+<img src="../images/TidyVoice.png" alt="WildSpoof Image" width="1000">
 
  
 
-# **WildSpoof**
+# **TidyVoice Challenge: Cross-Lingual Speaker Verification**
 
-The **WildSpoof** Challenge aims to advance the use of in-the-wild data in two speech processing tasks that generates and detects spoofed speech. We invite you to participate in the WildSpoof Challenge, designed to advance the use of in-the-wild data in two critical and increasingly intertwined speech processing tasks:
+The **TidyVoice Challenge** addresses the critical open problem of speaker verification under language mismatch. The performance of speaker verification systems degrades significantly under language mismatch, a critical challenge exacerbated by the field's reliance on English-centric data. 
 
-1. Text-to-Speech Generation (**TTS**)
-2. Spoofing-aware Automatic Speaker Verification (**SASV**)
+This challenge leverages the **Tidy-X dataset** from the novel TidyVoice benchmark, a large-scale, multilingual corpus derived from Mozilla Common Voice, and specifically curated to isolate the effect of language switching across around 80 languages. Participants will be tasked with building systems robust to this mismatch, with performance primarily evaluated using the Equal Error Rate (EER) on cross-language trials.
 
-The WildSpoof Challenge promotes research that bridges the gap between speech generation and spoofing detection, fostering interdisciplinary innovation towards more robust, realistic, and integrated speech systems. Specifically, we set the following objectives:
-
-1. Advance the use of in-the-wild data in two closely related but underexplored tasks: TTS and SASV, moving beyond conventional clean and controlled datasets. 
-2. Foster interdisciplinary collaboration between spoofing generation (TTS) and detection (SASV) sides, encouraging the development of more integrated, robust, and realistic systems.
+By providing standardized data, open-source baselines, and a rigorous evaluation protocol, this challenge aims to drive research towards fairer, more inclusive, and language-independent speaker recognition technologies, directly aligning with the Interspeech 2026 theme, **"Speaking Together."**
 
 
 
@@ -29,11 +25,11 @@ The WildSpoof Challenge promotes research that bridges the gap between speech ge
 
 ## Why Participate
 
-- Advance cutting-edge research in TTS and SASV using realistic in-the-wild data.
-- Democratize TTS development, eliminating dependence on expensive studio recordings.
-- Strengthen SASV systems against real-world synthetic speech threats.
-- Encourage the co-evolution of synthesis and detection models in adversarial settings.
-- Benchmark your models alongside international teams in an official ICASSP challenge.
+- **Address a Key Scientific Gap**: The TidyVoice dataset uniquely isolates the impact of language switching by offering curated data from the same speaker across different languages, enabling focused investigation into truly language-independent speaker embeddings.
+- **Promote Fairness and Inclusivity**: Built upon a dataset encompassing approximately 80 distinct languages and around 7000 multilingual speakers, motivating systems that are not biased towards a single language.
+- **Access a New Public Resource**: Unlike proprietary benchmarks, the TidyVoice dataset, evaluation protocols, and baseline models will be made publicly available, promoting reproducible research.
+- **Establish a Benchmark**: By being based on Mozilla Common Voice, this challenge focuses on read speech, providing a controlled setting for precise analysis of cross-lingual acoustic modeling.
+- **Benchmark Your Models**: Compare your systems alongside international teams in an official Interspeech 2026 challenge.
 
 
 
@@ -41,17 +37,19 @@ The WildSpoof Challenge promotes research that bridges the gap between speech ge
 
 
 
-## Challenge Tracks
+## Challenge Overview
 
-There are two tracks in the WildSpoof challenge. Participation is open to all. Each team can participate in either TTS or SASV task.
+The TidyVoice Challenge is an **open-condition challenge** where participants are permitted to use any public or private datasets to train their systems. The core task is **speaker verification** - systems must output log-likelihood ratio (LLR) scores indicating whether enrollment and test recordings are from the same person.
 
-#### **1. TTS Track**
+**Primary Evaluation Metric**: Equal Error Rate (EER) on same-speaker, cross-language trials.
 
-The Goal of the TTS track is to develop high-quality TTS systems using in-the-wild speech data. The training data is from the TITW dataset, and the evaluation set will be TITW-KSKT and TITW-KSUT (following the instructions [here](https://arxiv.org/pdf/2409.08711), we will add more detail soon).
+**Secondary Metric**: Minimum Detection Cost Function (minDCF) for comprehensive performance analysis.
 
-#### **2. SASV Track**
-
-The goal of the SASV track is to build robust SASV systems, utilizing source data from real-world conditions and spoofing attacks generated by TTS systems also trained on the same real-world data. This Spoofceleb dataset will be supported as the training set and test set for the SASV track.
+The challenge uses the **Tidy-X dataset**, a curated partition from Mozilla Common Voice featuring:
+- Over 4,474 speakers across 40 languages
+- Approximately 321,711 utterances totaling 457 hours
+- Clearly defined training and test splits
+- Pseudonymized speaker identities for privacy protection
 
 
 
@@ -61,10 +59,9 @@ The goal of the SASV track is to build robust SASV systems, utilizing source dat
 
 ## Relevant Links
 
-- [TITW dataset](https://arxiv.org/abs/2409.08711)
-- [SpoofCeleb dataset page](https://www.jungjee.com/spoofceleb/)
-- [WildSpoof website](https://wildspoof.github.io)
-- Contact: Yihan Wu (yihanwu@ruc.edu.cn)
+- [TidyVoice Challenge GitHub](https://github.com/tidyvoice-challenge)
+- [Mozilla Common Voice](https://commonvoice.mozilla.org/)
+- Contact: Aref Farhadipour (aref.farhadipour@uzh.ch)
 
 
 

@@ -5,13 +5,12 @@ title: Important Dates
 
 
 
-- **Data release**: Open-sourced
-- **Evaluation plan release**: August 15, 2025
-- **Challenge registration deadline**: November 01, 2025
-- **Test dataset release**: November 15, 2025
-- **Submission Deadline**: December 01,2025 (23:59 AoE)
-- **Results Announcement**: December 05, 2025
-- **2-page Papers Due (by invitation only)**: December 07, 2025
-- **Camera-ready 2-page Papers Due**: January 18, 2026
+- **Development Phase**: December 1, 2025
+- **Evaluation Phase**: January 25, 2026
+- **Result Submission Deadline**: February 10, 2026
+- **Release of Participant Rankings**: February 15, 2026
+- **Challenge Paper Deadline**: February 25, 2026
+
+**Note**: We will encourage participants to start early on the paper writing; many sections can be written before obtaining the final evaluation results (e.g., background, system description, etc.).
 
  

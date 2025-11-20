@@ -1,8 +1,8 @@
 # Setup
-title:               WildSpoof challenge
+title:               TidyVoice Challenge
 tagline:             
-description:         ''
-url:                 https://wildspoof.github.io
+description:         Cross-Lingual Speaker Verification Challenge
+url:                 https://tidyvoice2026.github.io
 baseurl:             ''
 paginate:            5
 permalink:           pretty
@@ -10,9 +10,9 @@ permalink:           pretty
 
 # About/contact
 author:
-  name:              Yihanwu
-  url:               https://
-  email:             yihanwu@ruc.edu.cn
+  name:              TidyVoice Organizers
+  url:               https://github.com/tidyvoice-challenge
+  email:             aref.farhadipour@uzh.ch
 
 # Gems
 plugins:

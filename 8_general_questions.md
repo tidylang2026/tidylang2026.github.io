@@ -7,73 +7,81 @@ Frequently asked questions will be listed below.
 
 <br>
 
-#### **Q1. Can participants join both tracks?**
-Each team can participate in **only one track** — either **TTS** or **SASV**. Participants cannot join both tracks at the same time.
+#### **Q1. What is the core task of the TidyVoice Challenge?**
 
-#### **Q2. When will the test data for evaluation be released?**
-For the SASV track, the **test dataset** will be released **after November 15th**, once we receive outputs from the TTS track teams.
+The core task is **speaker verification**. Systems must output log-likelihood ratio (LLR) scores indicating whether enrollment and test recordings are from the same person.
 
-#### **Q3. There seems to be an error in Table 1 of the paper regarding TITW-Easy and TITW-Hard sample counts. Which one is correct?**
-Yes, there is a typo in **Table 1** of the paper.
-The numbers of samples for **TITW-Easy** and **TITW-Hard** are **reversed**.
-The correct statistics are:
+#### **Q2. Can I use external datasets for training?**
 
-| **Set**       | **samples** | **Avg dur (s)** | **Tot dur (h)** | **Avg # words** |
-| ------------- | ----------- | --------------- | --------------- | --------------- |
-| **TITW-Easy** | **248,024** | 2.51            | 173             | 10.55           |
-| **TITW-Hard** | **282,606** | 2.42            | 189             | 10.84           |
+Yes, this is an **open-condition challenge**. Participants are permitted to use any public or private datasets to train their systems. However, the use of all non-challenge data must be fully disclosed in the system description paper.
 
-<br>
+#### **Q3. What is the restriction regarding Mozilla Common Voice (MCV) data?**
 
-# For TTS Track
+**Strict restriction**: The only data permitted from the MCV dataset is the official **Tidy-X training partition**. The use of any other data from the MCV corpus is strictly forbidden.
 
-#### **Q4. Are pretrained datasets and pretrained models allowed on the TTS track?**
+#### **Q4. Can I use pre-trained models?**
 
-Yes, pretrained datasets and models are allowed. However, the **final submitted model must be fine-tuned on the TITW dataset** in the last phase.
+Yes, the use of publicly available, pre-trained models (e.g., models trained on VoxCeleb, VoxBlink, etc.) is permitted, provided their use is explicitly and thoroughly declared in the system description paper.
 
-#### **Q5. Is it allowed to combine multiple independently trained models during inference (e.g., averaging scores or using stacking)?**
+#### **Q5. Is data augmentation allowed?**
 
-Yes, combining multiple models during inference is allowed.
+Yes, the use of external, non-speech data for data augmentation (e.g., noise or reverberation from public corpora like MUSAN) is permitted and encouraged, but has to be explicitly and thoroughly disclosed in the system description paper.
 
-#### **Q6. Which evaluation metrics will be used for TTS track.**
+#### **Q6. How many submissions can I make?**
 
-We will use Versa as our evaluation tool. WER, UTMOS, DNSMOS, and speaker similarity will be calculated using this tool automatically.
+Each participating team is allowed to submit scores for a maximum of **three distinct systems** per trial list.
 
-<br>
+#### **Q7. What evaluation metrics will be used?**
 
-# For SASV Track
+- **Primary Metric**: Equal Error Rate (EER) on same-speaker, cross-language trials
+- **Secondary Metric**: Minimum Detection Cost Function (minDCF) with Cmiss = Cfa = 1.0 and Ptar = 0.01
 
-#### **Q7. Is it allowed to use external datasets for the SASV track?**
-Only the **VoxCeleb2** dataset can be used, as it does not overlap with the **SpoofCeleb** test set.
-No other external datasets are permitted for the SASV track.
+#### **Q8. What is the submission format?**
 
-#### **Q8. Are SSL (Self-Supervised Learning) models allowed?**
-Yes, SSL models are allowed.
+Participants must submit a tab-separated text file (.txt format) where each line contains:
+```
+enrollment_file    test_file    score
+```
 
-#### **Q9. Can SSL models be pre-trained on public datasets other than SpoofCeleb and VoxCeleb2?**
-Yes, SSL models pre-trained on other **public datasets** are permitted.
+The file must follow the same order as the trial file provided by the organizers.
 
-#### **Q10. Are there restrictions on the type of SSL models that can be used?**
-No, any model that applies self-supervised learning (SSL) is allowed, including but not limited to **wav2vec 2.0**, **HuBERT**, and other SSL-based models.
+#### **Q9. Is speaker identification part of this challenge?**
 
-#### **Q11. Can we use foundation models from other modalities, such as large language models (LLMs) for text processing?**
-Yes, the use of **multimodal foundation models**, including **LLMs**, is allowed.
+No. This challenge evaluates speaker verification (same/different identity) only. Speaker identification (closed-set or open-set classification among K speakers) is out of scope and will not be scored.
 
-#### **Q12. Can MUSAN/RIR be used for data augmentation?**
-Yes, the use of **MUSAN** and **RIR** is permitted for data augmentation.
+#### **Q10. Can I manually correct or re-label the challenge data?**
 
-#### **Q13. Can we use other data augmentation methods beyond MUSAN/RIR (e.g., TTS-based data generation)?**
-Yes, it’s acceptable as long as **no additional external datasets** are introduced.
+No. Manual correction or re-labeling of the officially provided challenge data is strictly prohibited.
 
-#### **Q14. How will the evaluation score be calculated?**
-Each **test utterance** will be paired with one **registration utterance**, following the provided **evaluation protocol** format (a list of <**enroll test_trial** > pairs).
+#### **Q11. What happens if I try to re-identify speakers or link them to external datasets?**
 
-#### **Q15. Where can I download the evaluation data?**
+Any attempt to determine the real-world identity of a speaker, or to link speakers in the challenge data to individuals or records in external datasets, services, or metadata ("data recombination") is strictly forbidden. Violations result in disqualification and notification to the organizers and hosting institutions.
 
-A link has been sent to all registered teams. Full evaluation data will be made public after the challenge closes. If you haven't received the link, please check the trash folder, or contact Yihan Wu (yihanwu@ruc.edu.cn).
+#### **Q12. Do I need to submit a system description paper?**
+
+Yes. To be eligible for inclusion in the final ranking and challenge results, participants must submit a system description paper to the dedicated Interspeech 2026 special session.
+
+#### **Q13. What must be included in the system description paper?**
+
+The system description paper must specify:
+- All data usage (including external sets) and preprocessing techniques
+- Model architecture and all of its components
+- Computational resources and a comprehensive training setup
+
+#### **Q14. What are the reproducibility requirements?**
+
+The top-performing team must submit their trained model and an inference script in a single .zip archive, sufficient to reproduce the reported scores. If results cannot be reproduced, the team will be disqualified and this requirement will pass to the next highest-ranked team.
+
+#### **Q15. Will language information be provided during evaluation?**
+
+No. Information about the language of each utterance will not be disclosed during evaluation to ensure fair assessment of language-independent systems.
+
+#### **Q16. Where can I find the baseline systems?**
+
+Official baseline systems will be released publicly, including complete training recipes (using the WeSpeaker toolkit), evaluation scripts, and pre-trained checkpoints. These will be available on the challenge GitHub repository.
 
 <br>
 
 # Contact
 
-If you have any other questions, please email the organizing committee: **Yihan Wu** (yihanwu@ruc.edu.cn).
+If you have any other questions, please email the organizing committee: **Aref Farhadipour** (aref.farhadipour@uzh.ch).
