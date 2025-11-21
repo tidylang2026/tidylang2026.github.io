@@ -27,6 +27,23 @@ title: Organizers
     border-radius: 8px;
   }
 
+  .organizer-contact {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .organizer-contact a {
+    color: #268bd2;
+    text-decoration: none;
+    font-size: 0.9em;
+  }
+
+  .organizer-contact a:hover {
+    text-decoration: underline;
+  }
+
   .organizer-bio {
     flex: 1; /* 简介占据剩余空间 */
   }
@@ -51,6 +68,10 @@ title: Organizers
   <div class="organizer-content">
     <div class="organizer-image">
       <img src="../images/Aref.jpg" alt="Aref Farhadipour">
+      <div class="organizer-contact">
+        <a href="mailto:aref.farhadipour@uzh.ch">📧 Email</a>
+        <a href="https://www.linkedin.com/in/areffarhadipour/" target="_blank">💼 LinkedIn</a>
+      </div>
     </div>
     <div class="organizer-bio">
       <p>Aref Farhadipour is a PhD student in the Department of Computational Linguistics at the University of Zurich, where he works on multimodal speaker recognition using voice, face, and gesture modalities. With a master's degree in sound engineering, his research interests include speaker and face recognition, multimodal learning, and audio-based large language models.</p>
