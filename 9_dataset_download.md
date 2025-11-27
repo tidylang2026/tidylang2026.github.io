@@ -67,11 +67,11 @@ Trial pairs file containing the evaluation protocol for the development set.
 <div style="background-color: #f8f9fa; border: 2px solid #ffc107; border-radius: 8px; padding: 20px; margin: 20px 0; text-align: center;">
   <h4 style="color: #856404; margin-bottom: 15px;">📥 Trial Pairs Download</h4>
   <p style="margin-bottom: 15px;">Click the link below to download the trial pairs file:</p>
-  <a href="#" style="display: inline-block; background-color: #ffc107; color: #212529; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold;">
+  <a href="https://drive.google.com/file/d/1OLEKewhcGi_W_gmqEDpjx-fZwQGz2kWU/view?usp=sharing" target="_blank" style="display: inline-block; background-color: #ffc107; color: #212529; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold;">
     🔗 Download Trial Pairs (trial_pairs_dev.txt)
   </a>
   <p style="margin-top: 10px; font-size: 0.9em; color: #666;">
-    <em>Link will be activated upon dataset release</em>
+    <em>Available now via Google Drive</em>
   </p>
 </div>
 
