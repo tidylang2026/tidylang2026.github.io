@@ -33,21 +33,22 @@ The complete dataset package containing both training and development data for t
 - Cross-lingual speaker samples across both splits
 
 **Download:**
-- **Size:** 36.72 GB
+- **Size:** 50 GB
 - **Format:** .wav file with 16KHz sampling Frequency
-- **Package:** Combined archive containing both train and dev folders
-- **Dataset Page:** [Mozilla Data Collective - TidyVoiceX_ASV](https://datacollective.mozillafoundation.org/datasets/cmihtsewu023so207xot1iqqw)
 
-<div style="background-color: #f8f9fa; border: 2px solid #007bff; border-radius: 8px; padding: 20px; margin: 20px 0; text-align: center;">
-  <h4 style="color: #007bff; margin-bottom: 15px;">📥 TidyVoiceX Complete Dataset</h4>
-  <p style="margin-bottom: 15px;">The dataset is available through the <strong>Mozilla Data Collective</strong>. Access the dataset page or use the API download script below.</p>
+<div style="background-color: #f8f9fa; border: 2px solid #ffc107; border-radius: 8px; padding: 20px; margin: 20px 0; text-align: center;">
+  <h4 style="color: #856404; margin-bottom: 15px;">📥 TidyVoiceX Complete Dataset</h4>
+  <p style="margin-bottom: 15px;">Click the link below to access the dataset page or download the API script:</p>
   <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 20px;">
-    <a href="https://datacollective.mozillafoundation.org/datasets/cmihtsewu023so207xot1iqqw" target="_blank" style="display: inline-block; background-color: #007bff; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold;">
+    <a href="https://datacollective.mozillafoundation.org/datasets/cmihtsewu023so207xot1iqqw" target="_blank" style="display: inline-block; background-color: #ffc107; color: #212529; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold;">
       🔗 View Dataset Page
     </a>
+    <a href="download_tidyvoice.py" download style="display: inline-block; background-color: #ffc107; color: #212529; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold;">
+      📥 Download Script
+    </a>
   </div>
-  <p style="margin-top: 15px; font-size: 0.9em; color: #666;">
-    <em>Download via Mozilla Data Collective API (see instructions below)</em>
+  <p style="margin-top: 10px; font-size: 0.9em; color: #666;">
+    <em>Available via Mozilla Data Collective</em>
   </p>
 </div>
 
@@ -145,54 +146,8 @@ Trial files for the official evaluation phase will be made available here.
 
 4. **Download Using Python Script:**
    
-   Save the following script as `download_tidyvoice.py` and run it:
-
-   ```python
-   #!/usr/bin/env python3
-
-   import os
-   from datacollective import DataCollective
-
-   # --------------------------------------------------------
-   #
-   # 1. install the package:   pip install datacollective
-   # 2. make your API Key here: https://datacollective.mozillafoundation.org/api-reference
-   # 
-   # --------------------------------------------------------
-
-   API_KEY = "YOUR_API_KEY_HERE"   # <-- put your Mozila API key here
-   OUTPUT_DIR = "/home/machine/TidyVoiceX_ASV"    # <-- where the dataset will be saved
-   # --------------------------------------------------------
-
-   DATASET_ID = "cmihtsewu023so207xot1iqqw"  # <-- Dont change it for downloading the TidyVoice Train/dev sets
-
-   def main():
-       print("TidyVoice 2026 Challenge Auto-Downloader")
-       print("==========================================")
-
-       os.makedirs(OUTPUT_DIR, exist_ok=True)
-       os.environ["MDC_API_KEY"] = API_KEY
-       os.environ["MDC_DOWNLOAD_PATH"] = OUTPUT_DIR
-
-       print(f"Saving to: {OUTPUT_DIR}")
-
-       try:
-           client = DataCollective()
-           client.get_dataset(DATASET_ID)
-
-           print("\nDownload completed successfully!")
-           print(f"Dataset saved in: {OUTPUT_DIR}\n")
-
-       except Exception as e:
-           print("\nERROR while downloading:")
-           print(str(e))
-           print("\nMake sure your API key and dataset ID are correct.\n")
-
-   if __name__ == "__main__":
-       main()
-   ```
-
-   **Usage:**
+   Download the [`download_tidyvoice.py`](download_tidyvoice.py) script from the dataset download section above, then:
+   
    - Replace `YOUR_API_KEY_HERE` with your Mozilla Data Collective API key
    - Update `OUTPUT_DIR` to your desired download location
    - Run: `python download_tidyvoice.py`
