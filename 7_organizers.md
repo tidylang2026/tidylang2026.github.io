@@ -99,7 +99,7 @@ title: Organizers
   <h2 class="organizer-name">Srikanth Madikeri</h2>
   <div class="organizer-content">
     <div class="organizer-image">
-      <img src="../images/anonymous.png" alt="Srikanth Madikeri">
+      <img src="../images/per/srikanth.jpeg" alt="Srikanth Madikeri">
     </div>
     <div class="organizer-bio">
       <p>Srikanth Madikeri is an academic associate in the Department of Computational Linguistics at the University of Zürich. He holds a PhD in Computer Science and Engineering from the Indian Institute of Technology Madras, where he specialized in speaker recognition and spoken keyword spotting. Before joining UZH, he worked at the Idiap Research Institute as a research associate. His research focuses on speech and language technologies, including low-resource automatic speech recognition, speaker and language recognition, and spoken dialogue systems.</p>
@@ -113,7 +113,7 @@ title: Organizers
   <h2 class="organizer-name">Volker Dellwo</h2>
   <div class="organizer-content">
     <div class="organizer-image">
-      <img src="../images/anonymous.png" alt="Volker Dellwo">
+      <img src="../images/per/Volker.jpg" alt="Volker Dellwo">
     </div>
     <div class="organizer-bio">
       <p>Volker Dellwo is Associate Professor of Phonetics at the University of Zurich, specializing in speech and voice sciences. His work focuses on how indexical information is encoded in and extracted from speech, and how this interacts with linguistic content. He is engaged in forensic phonetics, speaker recognition, speech rhythm, and variation across dialects, time, and social contexts.</p>
@@ -127,7 +127,7 @@ title: Organizers
   <h2 class="organizer-name">Teodora Vukovic</h2>
   <div class="organizer-content">
     <div class="organizer-image">
-      <img src="../images/anonymous.png" alt="Teodora Vukovic">
+      <img src="../images/per/teodora.jpg" alt="Teodora Vukovic">
     </div>
     <div class="organizer-bio">
       <p>Teodora Vukovic is a postdoctoral researcher in the Digital Society Initiative at the University of Zurich. Her work centers on CAPIRE, a project investigating how people are identified from multimodal behavioral signals such as vocal acoustics, speech, facial expressions, and gestures in real interaction settings. She also researches data anonymization techniques to preserve privacy.</p>
@@ -155,7 +155,7 @@ title: Organizers
   <h2 class="organizer-name">Francis M. Tyers</h2>
   <div class="organizer-content">
     <div class="organizer-image">
-      <img src="../images/anonymous.png" alt="Francis M. Tyers">
+      <img src="../images/per/francis.jpg" alt="Francis M. Tyers">
     </div>
     <div class="organizer-bio">
       <p>Francis M. Tyers is Associate Professor of Linguistics at Indiana University, specializing in computational linguistics with a focus on marginalized languages. His research centers on the development of linguistic resources and methods for analyzing morphosyntax, as well as the design of systems for machine translation and dependency parsing. He is an active contributor to open-source language technology projects and works to advance the accessibility of digital tools for under-represented languages.</p>
@@ -183,7 +183,7 @@ title: Organizers
   <h2 class="organizer-name">Eleanor Chodroff</h2>
   <div class="organizer-content">
     <div class="organizer-image">
-      <img src="../images/anonymous.png" alt="Eleanor Chodroff">
+      <img src="../images/per/chodroff.jpg" alt="Eleanor Chodroff">
     </div>
     <div class="organizer-bio">
       <p>Eleanor Chodroff is an SNF Professor at the University of Zurich in the Department of Computational Linguistics. Her research focuses on phonetic variation across speakers and languages. She regularly uses computational techniques and large-scale data processing to understand cognitive and AI representations of speech and voice. She has previously organized shared tasks and workshops for SIGMORPHON, an ACL Special Interest Group on computational approaches to Morphology, Phonology and Phonetics.</p>
