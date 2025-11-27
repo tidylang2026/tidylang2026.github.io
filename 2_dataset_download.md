@@ -76,14 +76,7 @@ Trial pairs file containing the evaluation protocol for the development set.
 
 The evaluation dataset will be released closer to the evaluation phase of the challenge.
 
-**Contents:**
-- Final evaluation recordings
-- Test set for official challenge scoring
-- Cross-lingual evaluation samples
 
-**Download:**
-- **Size:** [To be announced]
-- **Format:** [To be announced]
 
 <div style="background-color: #f8f9fa; border: 2px dashed #6c757d; border-radius: 8px; padding: 20px; margin: 20px 0; text-align: center;">
   <h4 style="color: #6c757d; margin-bottom: 15px;">⏳ TidyVoiceX_Evaluation</h4>
