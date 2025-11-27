@@ -33,15 +33,21 @@ The complete dataset package containing both training and development data for t
 - Cross-lingual speaker samples across both splits
 
 **Download:**
-- **Size:** ~ 50GB 
+- **Size:** 36.72 GB
 - **Format:** .wav file with 16KHz sampling Frequency
 - **Package:** Combined archive containing both train and dev folders
+- **Dataset Page:** [Mozilla Data Collective - TidyVoiceX_ASV](https://datacollective.mozillafoundation.org/datasets/cmihtsewu023so207xot1iqqw)
 
-<div style="background-color: #f8f9fa; border: 2px solid #007bff; border-radius: 8px; padding: 20px; margin: 20px 0;">
+<div style="background-color: #f8f9fa; border: 2px solid #007bff; border-radius: 8px; padding: 20px; margin: 20px 0; text-align: center;">
   <h4 style="color: #007bff; margin-bottom: 15px;">📥 TidyVoiceX Complete Dataset</h4>
-  <p style="margin-bottom: 15px;">The dataset is available through the <strong>Mozilla Data Collective API</strong>. Follow the download instructions below to access the complete dataset package (includes both train and dev data).</p>
-  <p style="margin-top: 10px; font-size: 0.9em; color: #666;">
-    <em>Download via Mozilla Data Collective API</em>
+  <p style="margin-bottom: 15px;">The dataset is available through the <strong>Mozilla Data Collective</strong>. Access the dataset page or use the API download script below.</p>
+  <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 20px;">
+    <a href="https://datacollective.mozillafoundation.org/datasets/cmihtsewu023so207xot1iqqw" target="_blank" style="display: inline-block; background-color: #007bff; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold;">
+      🔗 View Dataset Page
+    </a>
+  </div>
+  <p style="margin-top: 15px; font-size: 0.9em; color: #666;">
+    <em>Download via Mozilla Data Collective API (see instructions below)</em>
   </p>
 </div>
 
