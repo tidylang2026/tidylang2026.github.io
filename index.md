@@ -60,7 +60,7 @@ The challenge uses the **Tidy-X dataset**, a curated partition from Mozilla Comm
 ## Relevant Links
 
 - [TidyVoice Challenge GitHub](https://github.com/tidyvoice-challenge)
-- [Mozilla Common Voice](https://commonvoice.mozilla.org/)
+- [Mozilla Common Voice](https://datacollective.mozillafoundation.org/datasets/cmihtsewu023so207xot1iqqw)
 - Contact: Aref Farhadipour (aref.farhadipour@uzh.ch)
 
 
@@ -73,7 +73,7 @@ The challenge uses the **Tidy-X dataset**, a curated partition from Mozilla Comm
 
 <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 30px; margin: 40px 0; padding: 20px;">
   <div style="text-align: center;">
-    <img src="images/logo/Universität_Zürich_logo.svg" alt="University of Zürich" style="height: 80px; max-width: 200px; object-fit: contain;">
+    <img src="images/logo/Universität_Zürich_logo.svg" alt="University of Zürich" style="height: 120px; max-width: 300px; object-fit: contain;">
   </div>
   <div style="text-align: center;">
     <img src="images/logo/OVGU-Logo.svg" alt="Otto-von-Guericke University Magdeburg" style="height: 80px; max-width: 200px; object-fit: contain;">
