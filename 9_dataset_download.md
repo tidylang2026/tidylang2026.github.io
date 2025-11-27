@@ -21,51 +21,27 @@ The TidyVoice Challenge uses the **Tidy-X dataset**, a curated partition from Mo
 
 ## Dataset Components
 
-### TidyVoiceX_Train
+### TidyVoiceX Dataset (Train + Dev)
 
-The training dataset contains the primary data for developing your speaker verification systems.
+The complete dataset package containing both training and development data for the TidyVoice Challenge.
 
 **Contents:**
-- Multi-lingual speaker recordings
-- Speaker identity labels
-- Language annotations
+- **TidyVoiceX_Train/**: Training dataset with multi-lingual speaker recordings
+- **TidyVoiceX_Dev/**: Development dataset for system tuning and validation
+- Speaker identity labels and language annotations
 - Audio files in standard format
+- Cross-lingual speaker samples across both splits
 
 **Download:**
 - **Size:** [To be updated]
 - **Format:** [To be updated]
+- **Package:** Combined archive containing both train and dev folders
 
 <div style="background-color: #f8f9fa; border: 2px solid #007bff; border-radius: 8px; padding: 20px; margin: 20px 0; text-align: center;">
-  <h4 style="color: #007bff; margin-bottom: 15px;">📥 TidyVoiceX_Train Download</h4>
-  <p style="margin-bottom: 15px;">Click the link below to download the training dataset:</p>
+  <h4 style="color: #007bff; margin-bottom: 15px;">📥 TidyVoiceX Complete Dataset</h4>
+  <p style="margin-bottom: 15px;">Download the complete dataset package (includes both train and dev data):</p>
   <a href="#" style="display: inline-block; background-color: #007bff; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold;">
-    🔗 Download TidyVoiceX_Train
-  </a>
-  <p style="margin-top: 10px; font-size: 0.9em; color: #666;">
-    <em>Link will be activated upon dataset release</em>
-  </p>
-</div>
-
-<br>
-
-### TidyVoiceX_Dev
-
-The development dataset for system tuning and validation.
-
-**Contents:**
-- Development set recordings
-- Ground truth labels for evaluation
-- Cross-lingual speaker samples
-
-**Download:**
-- **Size:** [To be updated]
-- **Format:** [To be updated]
-
-<div style="background-color: #f8f9fa; border: 2px solid #28a745; border-radius: 8px; padding: 20px; margin: 20px 0; text-align: center;">
-  <h4 style="color: #28a745; margin-bottom: 15px;">📥 TidyVoiceX_Dev Download</h4>
-  <p style="margin-bottom: 15px;">Click the link below to download the development dataset:</p>
-  <a href="#" style="display: inline-block; background-color: #28a745; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold;">
-    🔗 Download TidyVoiceX_Dev
+    🔗 Download TidyVoiceX Dataset (Train + Dev)
   </a>
   <p style="margin-top: 10px; font-size: 0.9em; color: #666;">
     <em>Link will be activated upon dataset release</em>
