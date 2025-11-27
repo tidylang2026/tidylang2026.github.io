@@ -43,7 +43,7 @@ The complete dataset package containing both training and development data for t
     <a href="https://datacollective.mozillafoundation.org/datasets/cmihtsewu023so207xot1iqqw" target="_blank" style="display: inline-block; background-color: #ffc107; color: #212529; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold;">
       🔗 View Dataset Page
     </a>
-    <a href="download_tidyvoice.py" download style="display: inline-block; background-color: #ffc107; color: #212529; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold;">
+    <a href="https://raw.githubusercontent.com/tidyvoice2026/tidyvoice2026.github.io/main/download_tidyvoice.py" download style="display: inline-block; background-color: #ffc107; color: #212529; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold;">
       📥 Download Script
     </a>
   </div>
@@ -137,7 +137,7 @@ Trial files for the official evaluation phase will be made available here.
 
 4. **Download Using Python Script:**
    
-   Download the [`download_tidyvoice.py`](download_tidyvoice.py) script from the dataset download section above, then:
+   Download the [`download_tidyvoice.py`](https://github.com/tidyvoice2026/tidyvoice2026.github.io/blob/main/download_tidyvoice.py) script from the dataset download section above, then:
    
    - Replace `YOUR_API_KEY_HERE` with your Mozilla Data Collective API key
    - Update `OUTPUT_DIR` to your desired download location
