@@ -11,7 +11,7 @@ from datacollective import DataCollective
 # --------------------------------------------------------
 
 API_KEY = "YOUR_API_KEY_HERE"   # <-- put your Mozila API key here
-OUTPUT_DIR = "/home/machine/TidyVoiceX_ASV"    # <-- where the dataset will be saved
+OUTPUT_DIR = "/home/machin/TidyVoiceX_ASV"    # <-- where the dataset will be saved
 # --------------------------------------------------------
 
 DATASET_ID = "cmihtsewu023so207xot1iqqw"  # <-- Dont change it for downloading the TidyVoice Train/dev sets
