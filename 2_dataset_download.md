@@ -3,8 +3,6 @@ layout: page
 title: Dataset Download
 ---
 
-# Dataset Download
-
 Welcome to the TidyVoice Challenge dataset download page. Here you can access the training data, development data, and trial pairs needed to participate in the challenge.
 
 <br>
