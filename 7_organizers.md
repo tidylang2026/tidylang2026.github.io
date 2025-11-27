@@ -67,7 +67,7 @@ title: Organizers
   <h2 class="organizer-name">Aref Farhadipour</h2>
   <div class="organizer-content">
     <div class="organizer-image">
-      <img src="../images/per/Aref.jpg" alt="Aref Farhadipour">
+      <img src="../images/per/aref.jpg" alt="Aref Farhadipour">
       <div class="organizer-contact">
         <a href="mailto:aref.farhadipour@uzh.ch">📧 Email</a>
         <a href="https://www.linkedin.com/in/areffarhadipour/" target="_blank">💼 LinkedIn</a>
@@ -169,7 +169,7 @@ title: Organizers
   <h2 class="organizer-name">Ingo Siegert</h2>
   <div class="organizer-content">
     <div class="organizer-image">
-      <img src="../images/logo/ingo.png" alt="Ingo Siegert">
+      <img src="../images/per/ingo.png" alt="Ingo Siegert">
     </div>
     <div class="organizer-bio">
       <p>Ingo Siegert is a Privatdozent in Speech and Language Technology at Otto von Guericke University Magdeburg and Head of the research group AI-Based Assistance Systems in Psychosomatic and Psychotherapeutic Contexts at the University Hospital Magdeburg. He is Chair of the SIG Security and Privacy in Speech Communication and organizes the yearly SPSC Symposium. His work spans from privacy-preserving voice analytics and speech-based human–machine interaction, to affective and pathological speech processing, and ethical AI in voice technologies.</p>
