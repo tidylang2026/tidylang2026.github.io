@@ -33,8 +33,8 @@ The complete dataset package containing both training and development data for t
 - Cross-lingual speaker samples across both splits
 
 **Download:**
-- **Size:** [To be updated]
-- **Format:** [To be updated]
+- **Size:** ~ 50GB 
+- **Format:** .wav file with 16KHz sampling Frequency
 - **Package:** Combined archive containing both train and dev folders
 
 <div style="background-color: #f8f9fa; border: 2px solid #007bff; border-radius: 8px; padding: 20px; margin: 20px 0; text-align: center;">

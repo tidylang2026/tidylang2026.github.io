@@ -69,7 +69,7 @@ The challenge uses the **Tidy-X dataset**, a curated partition from Mozilla Comm
 
 
 
-## Collaborating Universities
+## Collaborating Organizations
 
 <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 30px; margin: 40px 0; padding: 20px;">
   <div style="text-align: center;">
