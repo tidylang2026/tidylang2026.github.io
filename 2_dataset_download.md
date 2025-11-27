@@ -36,14 +36,14 @@ The complete dataset package containing both training and development data for t
 - **Size:** 50 GB
 - **Format:** .wav file with 16KHz sampling Frequency
 
-<div style="background-color: #f8f9fa; border: 2px solid #ffc107; border-radius: 8px; padding: 20px; margin: 20px 0; text-align: center;">
-  <h4 style="color: #856404; margin-bottom: 15px;">📥 TidyVoiceX Complete Dataset</h4>
+<div style="background-color: #f8f9fa; border: 2px solid #7c3aed; border-radius: 8px; padding: 20px; margin: 20px 0; text-align: center;">
+  <h4 style="color: #5b21b6; margin-bottom: 15px;">📥 TidyVoiceX Complete Dataset</h4>
   <p style="margin-bottom: 15px;">Click the link below to access the dataset page or download the API script:</p>
   <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 20px;">
-    <a href="https://datacollective.mozillafoundation.org/datasets/cmihtsewu023so207xot1iqqw" target="_blank" style="display: inline-block; background-color: #ffc107; color: #212529; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold;">
+    <a href="https://datacollective.mozillafoundation.org/datasets/cmihtsewu023so207xot1iqqw" target="_blank" style="display: inline-block; background-color: #7c3aed; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold;">
       🔗 View Dataset Page
     </a>
-    <a href="https://raw.githubusercontent.com/tidyvoice2026/tidyvoice2026.github.io/main/download_tidyvoice.py" download style="display: inline-block; background-color: #ffc107; color: #212529; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold;">
+    <a href="https://raw.githubusercontent.com/tidyvoice2026/tidyvoice2026.github.io/main/download_tidyvoice.py" download style="display: inline-block; background-color: #7c3aed; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold;">
       📥 Download Script
     </a>
   </div>
