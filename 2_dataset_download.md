@@ -37,14 +37,11 @@ The complete dataset package containing both training and development data for t
 - **Format:** .wav file with 16KHz sampling Frequency
 - **Package:** Combined archive containing both train and dev folders
 
-<div style="background-color: #f8f9fa; border: 2px solid #007bff; border-radius: 8px; padding: 20px; margin: 20px 0; text-align: center;">
+<div style="background-color: #f8f9fa; border: 2px solid #007bff; border-radius: 8px; padding: 20px; margin: 20px 0;">
   <h4 style="color: #007bff; margin-bottom: 15px;">📥 TidyVoiceX Complete Dataset</h4>
-  <p style="margin-bottom: 15px;">Download the complete dataset package (includes both train and dev data):</p>
-  <a href="#" style="display: inline-block; background-color: #007bff; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold;">
-    🔗 Download TidyVoiceX Dataset (Train + Dev)
-  </a>
+  <p style="margin-bottom: 15px;">The dataset is available through the <strong>Mozilla Data Collective API</strong>. Follow the download instructions below to access the complete dataset package (includes both train and dev data).</p>
   <p style="margin-top: 10px; font-size: 0.9em; color: #666;">
-    <em>Link will be activated upon dataset release</em>
+    <em>Download via Mozilla Data Collective API</em>
   </p>
 </div>
 
@@ -107,14 +104,6 @@ The evaluation dataset will be released closer to the evaluation phase of the ch
 
 Trial files for the official evaluation phase will be made available here.
 
-**Contents:**
-- **Evaluation Trial File 1:** Primary evaluation protocol
-- **Evaluation Trial File 2:** Secondary evaluation protocol
-- Official scoring pairs for final rankings
-
-**Download:**
-- **Files:** evaluation_trials_1.txt, evaluation_trials_2.txt
-- **Format:** Text files with trial specifications
 
 <div style="background-color: #f8f9fa; border: 2px dashed #6c757d; border-radius: 8px; padding: 20px; margin: 20px 0; text-align: center;">
   <h4 style="color: #6c757d; margin-bottom: 15px;">⏳ Evaluation Trial Files</h4>
@@ -136,18 +125,73 @@ Trial files for the official evaluation phase will be made available here.
 
 ## Download Instructions
 
-1. **Registration Required:** Please complete the [registration process](6_registration.html) before downloading the dataset.
+1. **Registration Required:** Please complete the [registration process](7_registration.html) before downloading the dataset.
 
-2. **License Agreement:** By downloading the dataset, you agree to use it solely for the TidyVoice Challenge and research purposes.
+2. **Create Mozilla Data Collective API Key:** 
+   - Visit [https://datacollective.mozillafoundation.org/api-reference](https://datacollective.mozillafoundation.org/api-reference)
+   - Navigate to **Profile > API** to create your API credentials
+   - Save your API key securely
 
-3. **File Formats:** 
-   - Audio files: WAV format, 16kHz sampling rate
-   - Metadata: CSV and TXT formats
-   - Trial pairs: Text format with space-separated values
+3. **Install Required Package:**
+   ```bash
+   pip install datacollective
+   ```
 
-4. **System Requirements:**
-   - Minimum 50GB free disk space
-   - Stable internet connection for download
+4. **Download Using Python Script:**
+   
+   Save the following script as `download_tidyvoice.py` and run it:
+
+   ```python
+   #!/usr/bin/env python3
+
+   import os
+   from datacollective import DataCollective
+
+   # --------------------------------------------------------
+   #
+   # 1. install the package:   pip install datacollective
+   # 2. make your API Key here: https://datacollective.mozillafoundation.org/api-reference
+   # 
+   # --------------------------------------------------------
+
+   API_KEY = "YOUR_API_KEY_HERE"   # <-- put your Mozila API key here
+   OUTPUT_DIR = "/home/machine/TidyVoiceX_ASV"    # <-- where the dataset will be saved
+   # --------------------------------------------------------
+
+   DATASET_ID = "cmihtsewu023so207xot1iqqw"  # <-- Dont change it for downloading the TidyVoice Train/dev sets
+
+   def main():
+       print("TidyVoice 2026 Challenge Auto-Downloader")
+       print("==========================================")
+
+       os.makedirs(OUTPUT_DIR, exist_ok=True)
+       os.environ["MDC_API_KEY"] = API_KEY
+       os.environ["MDC_DOWNLOAD_PATH"] = OUTPUT_DIR
+
+       print(f"Saving to: {OUTPUT_DIR}")
+
+       try:
+           client = DataCollective()
+           client.get_dataset(DATASET_ID)
+
+           print("\nDownload completed successfully!")
+           print(f"Dataset saved in: {OUTPUT_DIR}\n")
+
+       except Exception as e:
+           print("\nERROR while downloading:")
+           print(str(e))
+           print("\nMake sure your API key and dataset ID are correct.\n")
+
+   if __name__ == "__main__":
+       main()
+   ```
+
+   **Usage:**
+   - Replace `YOUR_API_KEY_HERE` with your Mozilla Data Collective API key
+   - Update `OUTPUT_DIR` to your desired download location
+   - Run: `python download_tidyvoice.py`
+
+
 
 <br>
 
@@ -156,7 +200,7 @@ Trial files for the official evaluation phase will be made available here.
 The dataset is organized with **speakerID** folders directly inside each dataset folder, which then contain **languageID** subfolders with the corresponding audio files for that speaker in that specific language.
 
 ```
-TidyVoiceX_Train/
+TidyVoiceX_Train/Dev
 ├── speaker_001/
 │   ├── en/          # English recordings
 │   │   ├── file1.wav
@@ -173,25 +217,14 @@ TidyVoiceX_Train/
 │   └── ...
 └── ...
 
-TidyVoiceX_Dev/
-├── speaker_001/
-│   ├── en/          # English recordings
-│   │   └── audio_files.wav
-│   ├── fa/          # Persian recordings
-│   │   └── audio_files.wav
-│   └── ...
-├── speaker_002/
-│   ├── de/          # German recordings
-│   │   └── audio_files.wav
-│   └── ...
-└── ...
+
 ```
 
 **Structure Explanation:**
 - **TidyVoiceX_Train/**: Contains training data with speakerID folders directly at the root
 - **TidyVoiceX_Dev/**: Contains development data with speakerID folders directly at the root
 - Each **speakerID** folder contains all recordings for that specific speaker
-- **languageID** subfolders organize recordings by language (en, es, fr, de, it, etc.)
+- **languageID** subfolders organize recordings by language (en, fa, fr, de, it, etc.)
 - Audio files for each language are stored in their respective languageID folders
 - This structure enables easy access to cross-lingual data for the same speaker
 
@@ -202,7 +235,6 @@ TidyVoiceX_Dev/
 If you encounter any issues with the dataset download or have questions about the data format, please contact:
 
 - **Email:** aref.farhadipour@uzh.ch
-- **GitHub Issues:** [TidyVoice Challenge GitHub](https://github.com/tidyvoice-challenge)
 
 <br>
 
@@ -218,4 +250,4 @@ If you use the TidyVoice dataset in your research, please cite:
 
 ---
 
-**Note:** Dataset links will be activated closer to the challenge start date. Please check back regularly for updates.
+**Note:** Evaluation Dataset links will be activated closer to the challenge start date. Please check back regularly for updates.
