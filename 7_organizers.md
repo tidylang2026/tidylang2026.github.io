@@ -67,7 +67,7 @@ title: Organizers
   <h2 class="organizer-name">Aref Farhadipour</h2>
   <div class="organizer-content">
     <div class="organizer-image">
-      <img src="../images/Aref.jpg" alt="Aref Farhadipour">
+      <img src="../images/logo/Aref.jpg" alt="Aref Farhadipour">
       <div class="organizer-contact">
         <a href="mailto:aref.farhadipour@uzh.ch">📧 Email</a>
         <a href="https://www.linkedin.com/in/areffarhadipour/" target="_blank">💼 LinkedIn</a>
@@ -85,7 +85,7 @@ title: Organizers
   <h2 class="organizer-name">Jan Marquenie</h2>
   <div class="organizer-content">
     <div class="organizer-image">
-      <img src="../images/anonymous.png" alt="Jan Marquenie">
+      <img src="../images/logo/jan.jpg" alt="Jan Marquenie">
     </div>
     <div class="organizer-bio">
       <p>Jan Marquenie is a PhD student in the Group Mobile Dialog Systems at the Otto-von-Guericke University Magdeburg, focusing on speech privacy, speaker verification, and video anonymization. His research centers on the evaluation of de-identification methods and their impact on data utility. With a background in human–machine interaction, his work bridges speech security and multimodal interaction.</p>
@@ -141,7 +141,7 @@ title: Organizers
   <h2 class="organizer-name">Kathy Reid</h2>
   <div class="organizer-content">
     <div class="organizer-image">
-      <img src="../images/anonymous.png" alt="Kathy Reid">
+      <img src="../images/logo/kathy.jpg" alt="Kathy Reid">
     </div>
     <div class="organizer-bio">
       <p>Kathy Reid is a PhD student at the Australian National University's School of Cybernetics, where her research explores voice data and dataset documentation to promote more inclusive and equitable speech technologies. She holds a Research Partnership with the Mozilla Foundation, collaborating with the Common Voice team. Her expertise spans data visualization, research methods, data engineering, and speech recognition.</p>
@@ -169,7 +169,7 @@ title: Organizers
   <h2 class="organizer-name">Ingo Siegert</h2>
   <div class="organizer-content">
     <div class="organizer-image">
-      <img src="../images/anonymous.png" alt="Ingo Siegert">
+      <img src="../images/logo/ingo.jpg" alt="Ingo Siegert">
     </div>
     <div class="organizer-bio">
       <p>Ingo Siegert is a Privatdozent in Speech and Language Technology at Otto von Guericke University Magdeburg and Head of the research group AI-Based Assistance Systems in Psychosomatic and Psychotherapeutic Contexts at the University Hospital Magdeburg. He is Chair of the SIG Security and Privacy in Speech Communication and organizes the yearly SPSC Symposium. His work spans from privacy-preserving voice analytics and speech-based human–machine interaction, to affective and pathological speech processing, and ethical AI in voice technologies.</p>
