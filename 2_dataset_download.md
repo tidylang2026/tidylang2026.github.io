@@ -58,15 +58,6 @@ The complete dataset package containing both training and development data for t
 
 Trial pairs file containing the evaluation protocol for the development set.
 
-**Contents:**
-- Enrollment-test pairs
-- Same-speaker and different-speaker trials
-- Cross-lingual trial specifications
-- Ground truth labels
-
-**Download:**
-- **File:** trial_pairs_dev.txt
-- **Format:** Text file with trial specifications
 
 <div style="background-color: #f8f9fa; border: 2px solid #ffc107; border-radius: 8px; padding: 20px; margin: 20px 0; text-align: center;">
   <h4 style="color: #856404; margin-bottom: 15px;">📥 Trial Pairs Download</h4>
