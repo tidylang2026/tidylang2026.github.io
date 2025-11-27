@@ -74,7 +74,7 @@ title: Organizers
       </div>
     </div>
     <div class="organizer-bio">
-      <p>Aref Farhadipour is a PhD student in the Department of Computational Linguistics at the University of Zurich, where he works on multimodal speaker recognition using voice, face, and gesture modalities. With a master's degree in sound engineering, his research interests include speaker and face recognition, multimodal learning, and audio-based large language models.</p>
+      <p>Aref Farhadipour is a PhD student in the Department of Computational Linguistics at the University of Zurich, where he works on multimodal speaker recognition using voice, face, and gesture modalities. With a master's degree in sound engineering, his research interests include speaker and face recognition, multimodal learning, and audio-LLMs.</p>
     </div>
   </div>
 </div>
