@@ -7,15 +7,6 @@ Welcome to the TidyVoice Challenge dataset download page. Here you can access th
 
 <br>
 
-## Overview
-
-The TidyVoice Challenge uses the **Tidy-X dataset**, a curated partition from Mozilla Common Voice featuring:
-- Over 4,474 speakers across 40 languages
-- Approximately 321,711 utterances totaling 457 hours
-- Clearly defined training and test splits
-- Pseudonymized speaker identities for privacy protection
-
-<br>
 
 ## Dataset Components
 
