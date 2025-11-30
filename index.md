@@ -45,6 +45,20 @@ The TidyVoice Challenge is organized in two main phases:
 
 **Validation Phase**: In this phase, the development dataset will be released with ground truth labels. Participants will submit their results on the development set by uploading them to the **CodaBench website**. The ranking will be determined based on the performance on the development set, allowing participants to compare their systems against others on the leaderboard.
 
+## Trial Pair Structure
+
+**Development Phase**: The development trial pairs include four types to help participants assess how well their systems distinguish between speakers versus languages:
+- Target pairs (same speaker, same language)
+- Target pairs (same speaker, different languages)
+- Non-target pairs (different speakers, same language)
+- Non-target pairs (different speakers, different languages)
+
+**Evaluation Phase**: Participants will evaluate and submit results for two trial pair lists:
+- **Trial List 1**: Enrollment from seen languages, test from unseen languages
+- **Trial List 2**: Both enrollment and test from unseen languages (38 unseen languages)
+
+These trial structures are designed to evaluate systems' ability to eliminate language effects and perform robust speaker verification across languages, including languages not encountered during training.
+
 ## Learn More
 
 - **Challenge Description**: [Challenge Description]({{ site.baseurl }}/1_challenge_description)
@@ -56,7 +70,6 @@ The TidyVoice Challenge is organized in two main phases:
 - **Baseline Systems**: [Baseline Systems]({{ site.baseurl }}/7_baseline_systems)
 - **Organizers**: [Organizers]({{ site.baseurl }}/8_organizers)
 - **Registration**: [Registration]({{ site.baseurl }}/9_registration)
-- **General Questions**: [General Questions]({{ site.baseurl }}/10_general_questions)
 
 <br>
 
