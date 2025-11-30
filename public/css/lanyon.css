@@ -307,6 +307,53 @@ a.sidebar-nav-item:focus {
   margin-bottom: 4em;
 }
 
+/* Justify text in content areas */
+.container .content,
+.page,
+.post {
+  text-align: justify;
+}
+
+.container .content p,
+.page p,
+.post p,
+.container .content li,
+.page li,
+.post li {
+  text-align: justify;
+}
+
+/* Don't justify headings, code blocks, or tables */
+.container .content h1,
+.container .content h2,
+.container .content h3,
+.container .content h4,
+.container .content h5,
+.container .content h6,
+.page h1,
+.page h2,
+.page h3,
+.page h4,
+.page h5,
+.page h6,
+.post h1,
+.post h2,
+.post h3,
+.post h4,
+.post h5,
+.post h6,
+.container .content pre,
+.page pre,
+.post pre,
+.container .content code,
+.page code,
+.post code,
+.container .content table,
+.page table,
+.post table {
+  text-align: left;
+}
+
 /* Blog post or page title */
 .page-title,
 .post-title,
