@@ -5,11 +5,11 @@ title: Evaluation Plan
 
 ## Evaluation Metrics
 
-System performance will be ranked based on the following metrics, calculated from the submitted LLR scores:
+System performance will be ranked based on the following metrics, calculated from the submitted score file:
 
 #### **Primary Metric: Equal Error Rate (EER)**
 
-The primary metric for ranking will be the **Equal Error Rate (EER)**. This will be evaluated on the most challenging condition: **same-speaker, cross-language trials**. Evaluations will be performed on both pooled and per-language subsets to assess overall robustness and language-specific performance.
+The primary metric for ranking will be the **EER**. Evaluations will be reported on both pooled and four types of trial pair subsets to assess overall robustness and language-specific performance. In the evaluation phase, we have two different trial pair lists that all participants must evaluate and submit results for both trial lists. 
 
 #### **Secondary Metric: Minimum Detection Cost Function (minDCF)**
 
@@ -34,12 +34,27 @@ The evaluation will be conducted with a focus on system performance, fairness, a
 
 **Important**: Information about the language of each utterance will not be disclosed during evaluation to ensure fair assessment of language-independent systems.
 
-## Baseline Systems
+## Trial Pair Structure
 
-To provide a strong starting point for participants and ensure a fair and reproducible evaluation, we will publicly release official baseline systems. These systems represent a range of approaches, from training from scratch on the provided data to fine-tuning large, pre-trained models. The goal is to lower the barrier to entry and allow participants to benchmark their own novel methods against these robust baselines.
+### Development Phase Trial Pairs
 
-The three official baseline systems are:
-- **ResNet-34 (VB2)**: A powerful model pre-trained on VoxBlink2 (VB2)
-- **ResNet-34 (fine-tuned)**: A powerful model pre-trained on VoxBlink2 (VB2) and then fine-tuned on the TidyVoiceX training partition
+The development trial pairs cover four types of pairs to help participants understand how well their systems distinguish between speakers versus languages:
 
-We will release the complete training recipes (using the WeSpeaker toolkit), evaluation scripts, and the pre-trained checkpoints for each of these models to the public. These systems and their results serve as a robust reference point against which participants can benchmark their own approaches.
+- **Target pairs in the same language**: Same speaker, same language
+- **Target pairs in different languages**: Same speaker, different languages
+- **Non-target pairs in the same language**: Different speakers, same language
+- **Non-target pairs in different languages**: Different speakers, different languages
+
+This variation allows participants to assess how much their system can distinguish between speakers versus how much it is influenced by language differences.
+
+### Evaluation Phase Trial Pairs
+
+In the evaluation phase, participants will be provided with **two different trial pair lists** that all participants must evaluate and submit results for:
+
+1. **Trial List 1**: Contains enrollment utterances from **seen languages** (languages present in the training and development data) and test utterances from **unseen languages** (languages not present in the training and development data).
+
+2. **Trial List 2**: Contains enrollment and test utterances from **unseen languages** only. This list includes 38 unseen languages that are not present in the training and development data.
+
+These trial pair structures are designed to evaluate the ability of systems to eliminate language effects and perform robust speaker verification across languages, including languages that were not encountered during training.
+
+For information about the official baseline systems, please see the [Baseline Systems]({{ site.baseurl }}/10_baseline_systems) page.
