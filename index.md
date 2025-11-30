@@ -79,7 +79,7 @@ These trial structures are designed to evaluate systems' ability to eliminate la
 
 - [Interspeech2026](https://interspeech2026.org/en-AU)
 - [Mozilla Common Voice](https://datacollective.mozillafoundation.org/datasets/cmihtsewu023so207xot1iqqw)
-- Contact: **Aref Farhadipour (aref.farhadipour@uzh.ch)**
+- ***Contact: Aref Farhadipour (aref.farhadipour@uzh.ch)**
 
 
 <br>
