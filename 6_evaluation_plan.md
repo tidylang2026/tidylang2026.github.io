@@ -57,4 +57,4 @@ In the evaluation phase, participants will be provided with **two different tria
 
 These trial pair structures are designed to evaluate the ability of systems to eliminate language effects and perform robust speaker verification across languages, including languages that were not encountered during training.
 
-For information about the official baseline systems, please see the [Baseline Systems]({{ site.baseurl }}/10_baseline_systems) page.
+For information about the official baseline systems, please see the [Baseline Systems]({{ site.baseurl }}/7_baseline_systems) page.

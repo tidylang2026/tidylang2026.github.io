@@ -47,13 +47,16 @@ The TidyVoice Challenge is organized in two main phases:
 
 ## Learn More
 
-- **Dataset**: [Dataset Download]({{ site.baseurl }}/2_dataset_download)
+- **Challenge Description**: [Challenge Description]({{ site.baseurl }}/1_challenge_description)
+- **Dataset Download**: [Dataset Download]({{ site.baseurl }}/2_dataset_download)
 - **Challenge Task**: [Challenge Task]({{ site.baseurl }}/3_challenge_tracks)
 - **Submission Guidelines**: [Submission Guidelines]({{ site.baseurl }}/4_submission_guidelines)
-- **Evaluation Plan**: [Evaluation Plan]({{ site.baseurl }}/6_evaluation_plan)
 - **Important Dates**: [Important Dates]({{ site.baseurl }}/5_important_dates)
-- **Registration**: [Registration]({{ site.baseurl }}/7_registration)
-- **General Questions**: [General Questions]({{ site.baseurl }}/9_general_questions)
+- **Evaluation Plan**: [Evaluation Plan]({{ site.baseurl }}/6_evaluation_plan)
+- **Baseline Systems**: [Baseline Systems]({{ site.baseurl }}/7_baseline_systems)
+- **Organizers**: [Organizers]({{ site.baseurl }}/8_organizers)
+- **Registration**: [Registration]({{ site.baseurl }}/9_registration)
+- **General Questions**: [General Questions]({{ site.baseurl }}/10_general_questions)
 
 <br>
 
