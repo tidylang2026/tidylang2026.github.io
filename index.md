@@ -37,6 +37,14 @@ The challenge uses the **TidyVoiceX dataset**, a curated partition from Mozilla 
 - Clearly defined training and test splits
 - Pseudonymized speaker identities for privacy protection
 
+## Challenge Phases
+
+The TidyVoice Challenge is organized in two main phases:
+
+**Development Phase**: During this phase, participants will use the provided **training and development datasets** to develop and tune their systems. Participants can experiment with different approaches, architectures, and hyperparameters using both the training and development data.
+
+**Validation Phase**: In this phase, the development dataset will be released with ground truth labels. Participants will submit their results on the development set by uploading them to the **CodaBench website**. The ranking will be determined based on the performance on the development set, allowing participants to compare their systems against others on the leaderboard.
+
 ## Learn More
 
 - **Dataset**: [Dataset Download]({{ site.baseurl }}/2_dataset_download)
