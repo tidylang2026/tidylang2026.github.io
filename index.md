@@ -23,20 +23,6 @@ By providing standardized data, open-source baselines, and a rigorous evaluation
 
 
 
-## Why Participate
-
-- **Address a Key Scientific Gap**: The TidyVoice dataset uniquely isolates the impact of language switching by offering curated data from the same speaker across different languages, enabling focused investigation into truly language-independent speaker embeddings.
-- **Promote Fairness and Inclusivity**: Built upon a dataset encompassing approximately 40 distinct languages and around 4,500 multilingual speakers, motivating systems that are not biased towards a single language.
-- **Access a New Public Resource**: Unlike proprietary benchmarks, the TidyVoice dataset, evaluation protocols, and baseline models will be made publicly available, promoting reproducible research.
-- **Establish a Benchmark**: By being based on Mozilla Common Voice, this challenge focuses on read speech, providing a controlled setting for precise analysis of cross-lingual acoustic modeling.
-- **Benchmark Your Models**: Compare your systems alongside international teams in an official Interspeech 2026 challenge.
-
-
-
-<br>
-
-
-
 ## Challenge Overview
 
 The TidyVoice Challenge is an **open-condition challenge** where participants are permitted to use any public or private datasets to train their systems, in addition to the provided TidyVoiceX training partition. Participants are also encouraged to use pre-trained models (e.g., ResNet, SSL models such as wav2vec2, WavLM, etc.). The only restriction is that **only the official TidyVoiceX training partition may be used from the Mozilla Common Voice dataset**; all other Common Voice data is strictly forbidden. The core task is **speaker verification** - systems must output similarity score.
@@ -51,7 +37,15 @@ The challenge uses the **TidyVoiceX dataset**, a curated partition from Mozilla 
 - Clearly defined training and test splits
 - Pseudonymized speaker identities for privacy protection
 
+## Learn More
 
+- **Dataset**: [Dataset Download]({{ site.baseurl }}/2_dataset_download)
+- **Challenge Task**: [Challenge Task]({{ site.baseurl }}/3_challenge_tracks)
+- **Submission Guidelines**: [Submission Guidelines]({{ site.baseurl }}/4_submission_guidelines)
+- **Evaluation Plan**: [Evaluation Plan]({{ site.baseurl }}/6_evaluation_plan)
+- **Important Dates**: [Important Dates]({{ site.baseurl }}/5_important_dates)
+- **Registration**: [Registration]({{ site.baseurl }}/7_registration)
+- **General Questions**: [General Questions]({{ site.baseurl }}/9_general_questions)
 
 <br>
 

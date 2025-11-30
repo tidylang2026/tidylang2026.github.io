@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Challenge Task and Dataset
+title: Challenge Task
 ---
 
 ## Challenge Task
