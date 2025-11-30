@@ -24,7 +24,7 @@ The TidyVoice Challenge is built upon a curated data partition derived from the 
 
 #### **Dataset Statistics**
 
-| Dataset | # Speakers | # Languages | # Utterances | Duration (hours) | Domain |
+| Dataset | #Spkr | #Lang | #Utt | Duration (H) | Domain |
 |---------|------------|------------|--------------|------------------|--------|
 | **TidyVoiceX: Train** | 3,666 | 40 | 262K | 370 | Read |
 | **TidyVoiceX: Dev** | 808 | 40 | 60K | 87 | Read |
