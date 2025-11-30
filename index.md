@@ -26,7 +26,7 @@ By providing standardized data, open-source baselines, and a rigorous evaluation
 ## Why Participate
 
 - **Address a Key Scientific Gap**: The TidyVoice dataset uniquely isolates the impact of language switching by offering curated data from the same speaker across different languages, enabling focused investigation into truly language-independent speaker embeddings.
-- **Promote Fairness and Inclusivity**: Built upon a dataset encompassing approximately 80 distinct languages and around 7000 multilingual speakers, motivating systems that are not biased towards a single language.
+- **Promote Fairness and Inclusivity**: Built upon a dataset encompassing approximately 40 distinct languages and around 4,500 multilingual speakers, motivating systems that are not biased towards a single language.
 - **Access a New Public Resource**: Unlike proprietary benchmarks, the TidyVoice dataset, evaluation protocols, and baseline models will be made publicly available, promoting reproducible research.
 - **Establish a Benchmark**: By being based on Mozilla Common Voice, this challenge focuses on read speech, providing a controlled setting for precise analysis of cross-lingual acoustic modeling.
 - **Benchmark Your Models**: Compare your systems alongside international teams in an official Interspeech 2026 challenge.
@@ -39,13 +39,13 @@ By providing standardized data, open-source baselines, and a rigorous evaluation
 
 ## Challenge Overview
 
-The TidyVoice Challenge is an **open-condition challenge** where participants are permitted to use any public or private datasets to train their systems, in addition to the provided TidyVoiceX training partition. Participants are also encouraged to use pre-trained models (e.g., ResNet, SSL models such as wav2vec2, HuBERT, etc.). The only restriction is that **only the official TidyVoiceX training partition may be used from the Mozilla Common Voice dataset**; all other Common Voice data is strictly forbidden. The core task is **speaker verification** - systems must output log-likelihood ratio (LLR) scores indicating whether enrollment and test recordings are from the same person.
+The TidyVoice Challenge is an **open-condition challenge** where participants are permitted to use any public or private datasets to train their systems, in addition to the provided TidyVoiceX training partition. Participants are also encouraged to use pre-trained models (e.g., ResNet, SSL models such as wav2vec2, WavLM, etc.). The only restriction is that **only the official TidyVoiceX training partition may be used from the Mozilla Common Voice dataset**; all other Common Voice data is strictly forbidden. The core task is **speaker verification** - systems must output similarity score.
 
-**Primary Evaluation Metric**: Equal Error Rate (EER) on same-speaker, cross-language trials.
+**Primary Evaluation Metric**: Equal Error Rate (EER).
 
 **Secondary Metric**: Minimum Detection Cost Function (minDCF) for comprehensive performance analysis.
 
-The challenge uses the **TidyVoiceX dataset**, a curated partition from Mozilla Common Voice featuring:
+The challenge uses the **TidyVoiceX dataset**, a curated partition from Mozilla Common Voice dataset featuring:
 - Over 4,474 speakers across 40 languages
 - Approximately 321,711 utterances totaling 457 hours
 - Clearly defined training and test splits
