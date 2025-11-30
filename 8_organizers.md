@@ -85,7 +85,7 @@ title: Organizers
   <h2 class="organizer-name">Jan Marquenie</h2>
   <div class="organizer-content">
     <div class="organizer-image">
-      <img src="../images/per/jan.jpg" alt="Jan Marquenie">
+      <img src="../images/per/Jan.jpeg" alt="Jan Marquenie">
     </div>
     <div class="organizer-bio">
       <p>Jan Marquenie is a PhD student in the Group Mobile Dialog Systems at the Otto-von-Guericke University Magdeburg, focusing on speech privacy, speaker verification, and video anonymization. His research centers on the evaluation of de-identification methods and their impact on data utility. With a background in human–machine interaction, his work bridges speech security and multimodal interaction.</p>
