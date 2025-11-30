@@ -87,7 +87,7 @@ These trial structures are designed to evaluate systems' ability to eliminate la
 
 ## Short Description of Image on Main Page
 
-In each speech signal from a single person, we have multiple types of information: the identity of the speaker, the content of the speech, emotional information, language information, etc. In this challenge, we aim to develop systems that, when receiving a speech signal from a human, can eliminate the language effect in the speech utterance and perform speaker verification in a language-independent manner.
+In each speech signal from a single person, we have multiple types of information: the identity of the speaker, the content of the speech, emotional information, language information, etc. In this challenge, we aim to develop systems that, when receiving a speech signal from a human, can **eliminate the language effect** in the speech utterance and perform speaker verification in a language-independent manner.
 
 *This image was generated and edited using Runway and Qwen-VL models.*
 
