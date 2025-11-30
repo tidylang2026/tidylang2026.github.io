@@ -38,9 +38,9 @@ All pre-trained models used must be explicitly and thoroughly declared in the sy
 
 The use of external, non-speech data for data augmentation (e.g., noise or reverberation from public corpora like MUSAN) is permitted and encouraged, but has to be explicitly and thoroughly disclosed in the system description paper.
 
-#### **7. Submission Limit**
+#### **7. Submission Process**
 
-Each participating team is allowed to submit scores for a maximum of **three distinct systems** per trial list.
+Each participating team should submit the results on the evaluation set to the CodaBench platform that will be shared during the evaluation phase.
 
 #### **8. System Description**
 
