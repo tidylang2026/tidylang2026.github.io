@@ -9,8 +9,8 @@ To ensure a fair and standardized evaluation, all participants must adhere to th
 
 #### **1. Training Data Regulations**
 
-- This is an **open-condition challenge**, and participants are permitted to use any public or private datasets to train their systems. The use of all non-challenge data must be fully disclosed in the system description paper.
-- **Strict restriction**: The only data permitted from the MCV dataset is the official **Tidy-X training partition**, as defined in the Challenge Task and Dataset section. The official training data list will be provided on the challenge website.
+- This is an **open-condition challenge**, and participants are permitted to use any public or private datasets to train their systems, in addition to the provided TidyVoiceX training partition. The use of all non-challenge data must be fully disclosed in the system description paper.
+- **Strict restriction on Common Voice data**: The only data permitted from the Mozilla Common Voice (MCV) dataset is the official **TidyVoiceX training partition**, as defined in the Challenge Task and Dataset section. The use of any other data from the MCV corpus is strictly forbidden. The official training data list will be provided on the challenge website.
 
 #### **2. Prohibition of Re-identification and Data Recombination**
 
@@ -26,7 +26,13 @@ Manual correction or re-labeling of the officially provided challenge data is st
 
 #### **5. Use of Pre-trained Models**
 
-The use of publicly available, pre-trained models (e.g., models trained on VoxCeleb, VoxBlink, etc.) is permitted, provided their use is explicitly and thoroughly declared in the system description paper.
+The use of publicly available, pre-trained models is permitted and encouraged. This includes (but is not limited to):
+- Pre-trained speaker recognition models (e.g., models trained on VoxCeleb, VoxBlink, etc.)
+- Pre-trained ResNet architectures
+- Self-supervised learning (SSL) models (e.g., wav2vec2, HuBERT, WavLM, etc.)
+- Any other publicly available pre-trained models
+
+All pre-trained models used must be explicitly and thoroughly declared in the system description paper, including their source, training data, and how they were integrated into the system.
 
 #### **6. Data Augmentation**
 

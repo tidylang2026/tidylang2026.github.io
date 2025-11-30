@@ -13,15 +13,21 @@ The core task is **speaker verification**. Systems must output log-likelihood ra
 
 #### **Q2. Can I use external datasets for training?**
 
-Yes, this is an **open-condition challenge**. Participants are permitted to use any public or private datasets to train their systems. However, the use of all non-challenge data must be fully disclosed in the system description paper.
+Yes, this is an **open-condition challenge**. Participants are permitted to use any public or private datasets to train their systems, in addition to the provided TidyVoiceX training partition. However, the use of all non-challenge data must be fully disclosed in the system description paper.
 
 #### **Q3. What is the restriction regarding Mozilla Common Voice (MCV) data?**
 
-**Strict restriction**: The only data permitted from the MCV dataset is the official **Tidy-X training partition**. The use of any other data from the MCV corpus is strictly forbidden.
+**Strict restriction**: The only data permitted from the MCV dataset is the official **TidyVoiceX training partition**. The use of any other data from the MCV corpus is strictly forbidden.
 
 #### **Q4. Can I use pre-trained models?**
 
-Yes, the use of publicly available, pre-trained models (e.g., models trained on VoxCeleb, VoxBlink, etc.) is permitted, provided their use is explicitly and thoroughly declared in the system description paper.
+Yes, the use of publicly available, pre-trained models is permitted and encouraged. This includes:
+- Pre-trained speaker recognition models (e.g., models trained on VoxCeleb, VoxBlink, etc.)
+- Pre-trained ResNet architectures
+- Self-supervised learning (SSL) models (e.g., wav2vec2, HuBERT, WavLM, etc.)
+- Any other publicly available pre-trained models
+
+All pre-trained models used must be explicitly and thoroughly declared in the system description paper, including their source, training data, and how they were integrated into the system.
 
 #### **Q5. Is data augmentation allowed?**
 

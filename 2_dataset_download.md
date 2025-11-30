@@ -105,7 +105,7 @@ Trial files for the official evaluation phase will be made available here.
 
 ## Download Instructions
 
-1. **Registration Required:** Please complete the [registration process](7_registration.html) before downloading the dataset.
+1. **Registration Required:** Please complete the [registration process](7_registration.md) before downloading the dataset.
 
 2. **Create Mozilla Data Collective API Key:** 
    - Visit [https://datacollective.mozillafoundation.org/api-reference](https://datacollective.mozillafoundation.org/api-reference)
