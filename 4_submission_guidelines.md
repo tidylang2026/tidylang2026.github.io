@@ -10,7 +10,7 @@ To ensure a fair and standardized evaluation, all participants must adhere to th
 #### **1. Training Data Regulations**
 
 - This is an **open-condition challenge**, and participants are permitted to use any public or private datasets to train their systems, in addition to the provided TidyVoiceX training partition. The use of all non-challenge data must be fully disclosed in the system description paper.
-- **Strict restriction on Common Voice data**: The only data permitted from the Mozilla Common Voice (MCV) dataset is the official **TidyVoiceX training partition**, as defined in the Challenge Task and Dataset section. The use of any other data from the MCV corpus is strictly forbidden. The official training data list will be provided on the challenge website.
+- **Strict restriction on Common Voice data**: The only data permitted from the Mozilla Common Voice (MCV) dataset is the official **TidyVoiceX dataset**, as defined in the Challenge Task and Dataset section. The use of any other data from the MCV corpus is strictly forbidden. 
 
 #### **2. Prohibition of Re-identification and Data Recombination**
 
@@ -28,7 +28,6 @@ Manual correction or re-labeling of the officially provided challenge data is st
 
 The use of publicly available, pre-trained models is permitted and encouraged. This includes (but is not limited to):
 - Pre-trained speaker recognition models (e.g., models trained on VoxCeleb, VoxBlink, etc.)
-- Pre-trained ResNet architectures
 - Self-supervised learning (SSL) models (e.g., wav2vec2, HuBERT, WavLM, etc.)
 - Any other publicly available pre-trained models
 
@@ -40,22 +39,20 @@ The use of external, non-speech data for data augmentation (e.g., noise or rever
 
 #### **7. Submission Process**
 
-Each participating team should submit the results on the evaluation set to the CodaBench platform that will be shared during the evaluation phase.
+Each participating team should submit the results on the **evaluation set** to the CodaBench platform that will be shared during the evaluation phase.
 
-#### **8. System Description**
+#### **8. Eligibility for Final Ranking**
 
-Each submission must be accompanied by a detailed system description paper that specifies:
+To be eligible for inclusion in the final ranking and challenge results, participants must submit a system description paper to the dedicated Interspeech 2026 special session.
+
+#### **9. System Description**
+
+Each submission must be accompanied by a detailed system description paper in the [Interspeech format](https://www.overleaf.com/latex/templates/interspeech-paper-kit/svqkgcpdbxfg) that specifies:
 - All data usage (including external sets) and preprocessing techniques
 - Model architecture and all of its components
 - Computational resources and a comprehensive training setup
 
-#### **9. Eligibility for Final Ranking**
 
-To be eligible for inclusion in the final ranking and challenge results, participants must submit a system description paper to the dedicated Interspeech 2026 special session.
-
-#### **10. Reproducibility & Artifacts**
-
-The top-performing team in each task must submit their trained model and an inference script in a single .zip archive, sufficient to reproduce the reported scores and prevent post-submission alterations (e.g., manual correction). If results cannot be reproduced, the team will be disqualified and this requirement will pass to the next highest-ranked team.
 
 ## Submission Format
 
@@ -75,7 +72,7 @@ spk_A_enroll.wav    test_002.wav
 
 #### **System Output Format**
 
-Participants must submit a single output file (.txt format) containing a score for every trial specified in the trial file. The output file must follow the same order as the trial file and add a third column with the score. The format for each line is:
+Participants must submit a output file (.txt format) containing a score for every trial specified in the trial file. The output file must follow the same order as the trial file and add a third column with the similarity score. The format for each line is:
 
 ```
 enrollment_file    test_file    score
@@ -87,8 +84,7 @@ spk_A_enroll.wav    test_001.wav    0.862
 spk_A_enroll.wav    test_002.wav    0.124
 ```
 
-A validation script will be provided to participants to ensure their submission files conform to the required format before the final deadline.
 
 #### **Contact for Technical Issues**
 
-Should any technical issues arise during the submission process, participants may alternatively submit their results via email. Please contact the organizers (Aref Farhadipour, aref.farhadipour@uzh.ch) for further assistance.
+Should any technical issues arise during the submission process, participants may alternatively submit their results via email. Please contact the organizers (aref.farhadipour@uzh.ch) for further assistance.
