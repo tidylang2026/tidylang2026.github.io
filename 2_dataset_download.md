@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Download TidyVoiceX dataset
+title: Download TidyVoiceX Dataset
 ---
 
-Welcome to the TidyVoice Challenge dataset download page. Here you can access the training data, development data, and trial pairs needed to participate in the challenge.
+Here you can access the training data, development data, and trial pairs needed to participate in the challenge.
 
 <br>
 
@@ -12,7 +12,7 @@ Welcome to the TidyVoice Challenge dataset download page. Here you can access th
 
 ### TidyVoiceX Dataset (Train + Dev)
 
-The complete dataset package containing both training and development data for the TidyVoice Challenge.
+The complete dataset package containing both training and development data for the TidyVoice2026 Challenge.
 
 **Contents:**
 - **TidyVoiceX_Train/**: Training dataset with multi-lingual speaker recordings
@@ -55,7 +55,7 @@ Trial pairs file containing the evaluation protocol for the development set.
     🔗 Download Trial Pairs (trial_pairs_dev.txt)
   </a>
   <p style="margin-top: 10px; font-size: 0.9em; color: #666;">
-    <em>Available now via Google Drive</em>
+    <em>Available via Google Drive</em>
   </p>
 </div>
 
