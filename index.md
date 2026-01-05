@@ -69,7 +69,7 @@ These trial structures are designed to evaluate systems' ability to eliminate la
 - **Evaluation Plan**: [Evaluation Plan]({{ site.baseurl }}/6_evaluation_plan)
 - **Baseline Systems**: [Baseline Systems]({{ site.baseurl }}/7_baseline_systems)
 - **Organizers**: [Organizers]({{ site.baseurl }}/8_organizers)
-- **Registration**: [Registration]({{ site.baseurl }}/9_registration)
+- **Registration**: [Registration]({{ site.baseurl }}/10_registration)
 
 <br>
 
