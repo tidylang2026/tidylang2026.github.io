@@ -3,11 +3,23 @@ layout: page
 title: Baseline Systems
 ---
 
+
+
 ## Baseline Systems
 
 To provide a strong starting point for participants and ensure a fair and reproducible evaluation, we will publicly release an official baseline system. This system represents an approach that uses a pre-trained model fine-tuned on the provided data. The goal is to lower the barrier to entry and allow participants to benchmark their own novel methods against this robust baseline.
 
 The official baseline system is implemented using the **WeSpeaker toolkit**, a popular and widely-used toolbox for Automatic Speaker Verification (ASV) tasks. By leveraging this established framework, participants can more easily develop new achievements and build upon existing implementations, as the baseline provides a solid foundation within a familiar ecosystem.
+
+### Resources
+
+We release the complete training recipe (using the WeSpeaker toolkit), evaluation scripts, and the pre-trained checkpoint for this model to the public:
+
+- **Baseline Code Repository**: [https://github.com/areffarhadi/wespeaker/tree/master/examples/tidyvocie](https://github.com/areffarhadi/wespeaker/tree/master/examples/tidyvocie)
+- **Model Repository**: [https://huggingface.co/areffarhadi/Resnet34-tidyvoiceX-ASV](https://huggingface.co/areffarhadi/Resnet34-tidyvoiceX-ASV)
+
+This system and its results serve as a robust reference point against which participants can benchmark their own approaches. The use of the WeSpeaker toolkit ensures that participants can easily extend and modify the baseline system to develop novel methods for the challenge.
+
 
 ### Baseline Architecture
 
@@ -56,11 +68,4 @@ The score distributions for these four trial pair categories are visualized belo
 
 <iframe src="{{ site.baseurl }}/images/speaker_verification_distributions-5.pdf" width="100%" height="600px" style="border: none;"></iframe>
 
-### Resources
 
-We release the complete training recipe (using the WeSpeaker toolkit), evaluation scripts, and the pre-trained checkpoint for this model to the public:
-
-- **Baseline Code Repository**: [https://github.com/areffarhadi/wespeaker/tree/master/examples/tidyvocie](https://github.com/areffarhadi/wespeaker/tree/master/examples/tidyvocie)
-- **Model Repository**: [https://huggingface.co/areffarhadi/Resnet34-tidyvoiceX-ASV](https://huggingface.co/areffarhadi/Resnet34-tidyvoiceX-ASV)
-
-This system and its results serve as a robust reference point against which participants can benchmark their own approaches. The use of the WeSpeaker toolkit ensures that participants can easily extend and modify the baseline system to develop novel methods for the challenge.
