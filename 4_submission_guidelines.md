@@ -135,6 +135,4 @@ To view the **EER% for `tv26_eval-U.txt`** and **minDCFs** for both trial lists 
 
 This will display the complete evaluation metrics for your submission.
 
-#### **Contact for Technical Issues**
 
-Should any technical issues arise during the submission process, participants may alternatively submit their results via email. Please contact the organizers (aref.farhadipour@uzh.ch) for further assistance.
