@@ -6,7 +6,7 @@ title: Important Dates
 
 
 - **Development Phase**: December 1, 2025
-- **Evaluation Phase**: ~~January 25, 2026~~ **January 27, 2026**
+- **Evaluation Phase**: January 25, 2026
 - **Registration Deadline**: February 5, 2026
 - **Result Submission Deadline**: February 10, 2026
 - **Release Selected Teams**: February 12, 2026
