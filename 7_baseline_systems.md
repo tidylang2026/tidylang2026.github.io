@@ -18,7 +18,7 @@ We release the complete training recipe (using the WeSpeaker toolkit), evaluatio
 - **Baseline Code Repository**: [https://github.com/areffarhadi/wespeaker/tree/master/examples/tidyvocie](https://github.com/areffarhadi/wespeaker/tree/master/examples/tidyvocie)
 - **Model Repository**: [https://huggingface.co/areffarhadi/Resnet34-tidyvoiceX-ASV](https://huggingface.co/areffarhadi/Resnet34-tidyvoiceX-ASV)
 
-This system and its results serve as a robust reference point against which participants can benchmark their own approaches. The use of the WeSpeaker toolkit ensures that participants can easily extend and modify the baseline system to develop novel methods for the challenge.
+
 
 
 ### Baseline Architecture
