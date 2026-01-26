@@ -13,7 +13,7 @@ title: TidyVoice2026 Challenge
   <h2 style="color: white; margin-bottom: 20px; font-size: 28px;">🚀 Submit Your Results on CodaBench!</h2>
   <p style="color: white; font-size: 18px; margin-bottom: 25px;">The evaluation phase is now open. Submit your system's results and compete on the leaderboard!</p>
   <a href="https://www.codabench.org/competitions/13187/" target="_blank" style="display: inline-block; background-color: white; color: #7c3aed; padding: 15px 40px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 20px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);">
-    📊 Go to CodaBench Evaluation Platform
+    Go to CodaBench Evaluation Platform
   </a>
 </div>
 

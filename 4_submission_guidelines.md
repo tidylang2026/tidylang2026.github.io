@@ -56,6 +56,8 @@ Each submission must be accompanied by a detailed system description paper in th
 
 ## Submission Format
 
+The following guidelines for preparing submission files and viewing results apply to the **TidyVoice Challenge 2026** competition on CodaBench: [https://www.codabench.org/competitions/13187/](https://www.codabench.org/competitions/13187/). Please submit your results and check the leaderboard on that page.
+
 ### Overview
 Participants must submit a **single ZIP file** containing similarity scores for both trial lists. To minimize file size, submissions contain **only the scores** (one per line), without the trial pair names. Scores must be in the **exact same order** as the trial lists.
 
@@ -102,7 +104,7 @@ Each file contains **one score per line**:
 #### Using the Validation Script
 
 The validation script is available at:  
-[https://github.com/tidyvoice2026/tidyvoice2026.github.io/blob/main/prepare_submission.py](https://github.com/tidyvoice2026/tidyvoice2026.github.io/blob/main/prepare_submission.py)
+[prepare_submission.py](https://github.com/tidyvoice2026/tidyvoice2026.github.io/blob/main/prepare_submission.py)
 
 #### How It Works
 
@@ -116,19 +118,20 @@ This script assumes your score file contains **three columns** (enrollment, test
 6. Create the .zip file
 
 
-**We highly recommend using this code to generate your submission file to avoid formatting issues that could result in error at Codabench website.**
+**We highly recommend using this code to generate your submission file to avoid formatting issues that could result in error on the CodaBench website.**
 
 ### After Submission
 
-After submitting your file, if your submission is correctly formatted, you will see the **EER% for `tv26_eval-A.txt`** displayed automatically.
+Submit your ZIP file on the [TidyVoice Challenge 2026 CodaBench competition page](https://www.codabench.org/competitions/13187/). If your submission is correctly formatted, you will see the **EER% for `tv26_eval-A.txt`** displayed automatically.
 
 #### Viewing Complete Results
 
-To view the **EER% for `tv26_eval-U.txt`** and **minDCFs** for both trial lists:
+To view the **EER% for `tv26_eval-U.txt`** and **minDCFs** for both trial lists on CodaBench:
 
-1. Click on the **"File name"** of your submission
-2. Navigate to **"LOGS"**
-3. Open **"Scoring logs"**
+1. Go to [https://www.codabench.org/competitions/13187/](https://www.codabench.org/competitions/13187/)
+2. Click on the **"File name"** of your submission
+3. Navigate to **"LOGS"**
+4. Open **"Scoring logs"**
 
 This will display the complete evaluation metrics for your submission.
 

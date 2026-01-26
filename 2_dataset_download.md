@@ -94,11 +94,11 @@ The official evaluation dataset for the TidyVoice2026 Challenge.
 
 ### Evaluation Trial Files
 
-Official trial pairs for the evaluation dataset, including both ascribed (A) and unseen (U) conditions.
+Official trial pairs for the evaluation dataset: **A** = All languages, **U** = Unseen languages.
 
 **Trial Files Included:**
-- **tv26_eval-A.txt**: Evaluation trial pairs for ascribed condition
-- **tv26_eval-U.txt**: Evaluation trial pairs for unseen condition
+- **tv26_eval-A.txt**: Evaluation trial pairs for All languages
+- **tv26_eval-U.txt**: Evaluation trial pairs for Unseen languages
 
 
 <div style="background-color: #f8f9fa; border: 2px solid #28a745; border-radius: 8px; padding: 20px; margin: 20px 0; text-align: center;">
@@ -134,7 +134,7 @@ Official trial pairs for the evaluation dataset, including both ascribed (A) and
    
    - Replace `YOUR_API_KEY_HERE` with your Mozilla Data Collective API key
    - Update `OUTPUT_DIR` to your desired download location
-   - Run: `python download_tidyvoice.py`
+   - Run: `python download_tidyvoice.py` and `python download_tidyvoice2.py`
 
 
 
@@ -188,7 +188,13 @@ If you encounter any issues with the dataset download or have questions about th
 If you use the TidyVoice dataset in your research, please cite:
 
 ```
-[Citation information will be provided upon dataset release]
+@misc{farhadi2026tidy,
+      title={TidyVoice: A Curated Multilingual Dataset for Speaker Verification Derived from Common Voice}, 
+      author={Aref Farhadipour and Jan Marquenie and Srikanth Madikeri and Eleanor Chodroff},
+      year={2026},
+      journal={ICASSP2026},
+      url={https://arxiv.org/abs/2601.16358}, 
+}
 ```
 
 <br>
