@@ -56,34 +56,81 @@ Each submission must be accompanied by a detailed system description paper in th
 
 ## Submission Format
 
-#### **Trial File Format**
+### Overview
+Participants must submit a **single ZIP file** containing similarity scores for both trial lists. To minimize file size, submissions contain **only the scores** (one per line), without the trial pair names. Scores must be in the **exact same order** as the trial lists.
 
-The evaluation trial list will be provided as a tab-separated text file. Each line in this file represents a single trial pair to be scored. The format for each line is:
-
-```
-enrollment_file    test_file
-```
-
-**Example:**
-```
-spk_A_enroll.wav    test_001.wav
-spk_A_enroll.wav    test_002.wav
-```
-
-#### **System Output Format**
-
-Participants must submit a output file (.txt format) containing a score for every trial specified in the trial file. The output file must follow the same order as the trial file and add a third column with the similarity score. The format for each line is:
+### Required Files
+Your submission ZIP must contain exactly **two files**:
 
 ```
-enrollment_file    test_file    score
+submission.zip
+├── tv26_eval-A.txt    # Scores for Trial List 1 (4,000,000 lines)
+└── tv26_eval-U.txt    # Scores for Trial List 2 (1,280,000 lines)
 ```
 
-**Example:**
+### File Format
+Each file contains **one score per line**:
+- `tv26_eval-A.txt`: 4,000,000 scores (one per trial in Trial List 1)
+- `tv26_eval-U.txt`: 1,280,000 scores (one per trial in Trial List 2)
+
+**Example (first 5 lines of tv26_eval-A.txt):**
+
 ```
-spk_A_enroll.wav    test_001.wav    0.862
-spk_A_enroll.wav    test_002.wav    0.124
+0.012345
+0.123456
+0.234567
+0.345678
+0.456789
 ```
 
+#### Format Requirements
+
+| Requirement | Description |
+|-------------|-------------|
+| **Score format** | Floating point number (e.g., `0.862541` or `-1.234`) |
+| **One score per line** | No additional columns, tabs, or spaces |
+| **Exact line count** | Must match the trial list exactly |
+| **No header** | Start directly with scores |
+| **Correct order** | Scores must correspond to trials in the same order as provided |
+
+⚠️ **Important:** Higher scores indicate higher likelihood that the two utterances are from the same speaker.
+
+### Validation Script (Recommended)
+
+**Because the website is sensitive to the exact format, naming, and folder structure of submission files**, we strongly recommend using our automated validation script to generate your submission file.
+
+#### Using the Validation Script
+
+The validation script is available at:  
+[https://github.com/tidyvoice2026/tidyvoice2026.github.io/blob/main/prepare_submission.py](https://github.com/tidyvoice2026/tidyvoice2026.github.io/blob/main/prepare_submission.py)
+
+#### How It Works
+
+This script assumes your score file contains **three columns** (enrollment, test, score) **without headers**. The script will:
+
+1. Read your score file with three columns (space separated): `enroll`, `test`, `score`
+2. Compare it with the original trial pair files we provided
+3. Generate the correct submission format
+4. Verify the order of scores matches the trial lists
+5. Create properly formatted `tv26_eval-A.txt` and `tv26_eval-U.txt` files
+6. Create the .zip file
+
+
+**We highly recommend using this code to generate your submission file to avoid formatting issues that could result in error at Codabench website.**
+
+### After Submission
+
+After submitting your file, if your submission is correctly formatted, you will see the **EER% for `tv26_eval-A.txt`** displayed automatically.
+
+#### Viewing Complete Results
+
+To view the **EER% for `tv26_eval-U.txt`** and **minDCFs** for both trial lists:
+
+1. Click on the **"File name"** of your submission
+2. Navigate to **"LOGS"**
+3. Open **"Scoring logs"**
+
+This will display the complete evaluation metrics for your submission.
 
 #### **Contact for Technical Issues**
 

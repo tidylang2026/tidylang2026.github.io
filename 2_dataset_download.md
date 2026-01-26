@@ -61,43 +61,54 @@ Trial pairs file containing the evaluation protocol for the development set.
 
 <br>
 
-### TidyVoiceX_Evaluation (Coming Soon)
+### TidyVoiceX2_ASV (Evaluation Dataset)
 
-The evaluation dataset will be released closer to the evaluation phase of the challenge.
+The official evaluation dataset for the TidyVoice2026 Challenge.
 
+**Contents:**
+- **TidyVoiceX2_ASV/**: Evaluation dataset with multi-lingual speaker recordings covering approximately 40 additional languages
+- Cross-lingual speaker samples for evaluation
+- Audio files in standard format
 
+**Download:**
+- **Size:** 32 GB
+- **Format:** .wav file with 16KHz sampling Frequency
 
-<div style="background-color: #f8f9fa; border: 2px dashed #6c757d; border-radius: 8px; padding: 20px; margin: 20px 0; text-align: center;">
-  <h4 style="color: #6c757d; margin-bottom: 15px;">⏳ TidyVoiceX_Evaluation</h4>
-  <p style="margin-bottom: 15px; color: #6c757d;">Evaluation dataset will be available here during the evaluation phase</p>
-  <button style="display: inline-block; background-color: #6c757d; color: white; padding: 12px 24px; border: none; border-radius: 5px; font-weight: bold; cursor: not-allowed;" disabled>
-    🔒 Coming Soon
-  </button>
+<div style="background-color: #f8f9fa; border: 2px solid #dc3545; border-radius: 8px; padding: 20px; margin: 20px 0; text-align: center;">
+  <h4 style="color: #c82333; margin-bottom: 15px;">📥 TidyVoiceX2_ASV Evaluation Dataset</h4>
+  <p style="margin-bottom: 15px;">Click the link below to access the dataset page or download the API script:</p>
+  <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 20px;">
+    <a href="https://datacollective.mozillafoundation.org/datasets/cmkv32i5e02tumg07j79d3c35" target="_blank" style="display: inline-block; background-color: #dc3545; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold;">
+      🔗 View Dataset Page
+    </a>
+    <a href="https://raw.githubusercontent.com/tidyvoice2026/tidyvoice2026.github.io/main/download_tidyvoice2.py" download style="display: inline-block; background-color: #dc3545; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold;">
+      📥 Download Script
+    </a>
+  </div>
   <p style="margin-top: 10px; font-size: 0.9em; color: #666;">
-    <em>Will be released during evaluation phase</em>
+    <em>Available via Mozilla Data Collective</em>
   </p>
 </div>
 
 <br>
 
-### Evaluation Trial Files (Coming Soon)
+### Evaluation Trial Files
 
-Trial files for the official evaluation phase will be made available here.
+Official trial pairs for the evaluation dataset, including both ascribed (A) and unseen (U) conditions.
+
+**Trial Files Included:**
+- **tv26_eval-A.txt**: Evaluation trial pairs for ascribed condition
+- **tv26_eval-U.txt**: Evaluation trial pairs for unseen condition
 
 
-<div style="background-color: #f8f9fa; border: 2px dashed #6c757d; border-radius: 8px; padding: 20px; margin: 20px 0; text-align: center;">
-  <h4 style="color: #6c757d; margin-bottom: 15px;">⏳ Evaluation Trial Files</h4>
-  <p style="margin-bottom: 15px; color: #6c757d;">Official evaluation trial files will be available here</p>
-  <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
-    <button style="background-color: #6c757d; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-weight: bold; cursor: not-allowed;" disabled>
-      🔒 Evaluation Trial File 1
-    </button>
-    <button style="background-color: #6c757d; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-weight: bold; cursor: not-allowed;" disabled>
-      🔒 Evaluation Trial File 2
-    </button>
-  </div>
+<div style="background-color: #f8f9fa; border: 2px solid #28a745; border-radius: 8px; padding: 20px; margin: 20px 0; text-align: center;">
+  <h4 style="color: #218838; margin-bottom: 15px;">📥 Evaluation Trial Files Download</h4>
+  <p style="margin-bottom: 15px;">Click the link below to download the trial pairs file (contains both tv26_eval-A.txt and tv26_eval-U.txt):</p>
+  <a href="https://drive.google.com/file/d/1tIFjYnRHGLypciX4Dl7IBX86vymAnVRP/view?usp=sharing" target="_blank" style="display: inline-block; background-color: #28a745; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold;">
+    🔗 Download Evaluation Trial Pairs (ZIP)
+  </a>
   <p style="margin-top: 10px; font-size: 0.9em; color: #666;">
-    <em>Will be released during evaluation phase</em>
+    <em>Available via Google Drive</em>
   </p>
 </div>
 
@@ -105,7 +116,7 @@ Trial files for the official evaluation phase will be made available here.
 
 ## Download Instructions
 
-1. **Registration Required:** Please complete the [registration process](7_registration.md) before downloading the dataset.
+1. **Registration Required:** Please complete the [registration process](https://tidyvoice2026.github.io/10_registration/) before downloading the dataset.
 
 2. **Create Mozilla Data Collective API Key:** 
    - Visit [https://datacollective.mozillafoundation.org/api-reference](https://datacollective.mozillafoundation.org/api-reference)
@@ -183,5 +194,3 @@ If you use the TidyVoice dataset in your research, please cite:
 <br>
 
 ---
-
-**Note:** Evaluation Dataset links will be activated closer to the challenge start date. Please check back regularly for updates.

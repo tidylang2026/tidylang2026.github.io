@@ -7,7 +7,27 @@ title: TidyVoice2026 Challenge
 
 <img src="../images/TidyVoice.png" alt="WildSpoof Image" width="1000">
 
- 
+<br>
+
+<div style="background-color: #7c3aed; border: 3px solid #5b21b6; border-radius: 12px; padding: 30px; margin: 30px 0; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+  <h2 style="color: white; margin-bottom: 20px; font-size: 28px;">🚀 Submit Your Results on CodaBench!</h2>
+  <p style="color: white; font-size: 18px; margin-bottom: 25px;">The evaluation phase is now open. Submit your system's results and compete on the leaderboard!</p>
+  <a href="https://www.codabench.org/competitions/13187/" target="_blank" style="display: inline-block; background-color: white; color: #7c3aed; padding: 15px 40px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 20px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);">
+    📊 Go to CodaBench Evaluation Platform
+  </a>
+</div>
+
+<div style="background-color: #f0fdf4; border-left: 5px solid #22c55e; padding: 20px; margin: 25px 0; border-radius: 5px;">
+  <p style="margin: 0; color: #166534; font-size: 16px;">
+    <strong>📢 [UPDATE] [26.1.2026]</strong> Evaluation set released! Please follow 
+    <a href="https://tidyvoice2026.github.io/2_dataset_download/" style="color: #16a34a; text-decoration: underline;">Dataset Download page</a> 
+    for downloading the Eval data and 
+    <a href="https://tidyvoice2026.github.io/4_submission_guidelines/" style="color: #16a34a; text-decoration: underline;">Submission Guidelines page</a> 
+    for submission instructions.
+  </p>
+</div>
+
+<br>
 
 # **TidyVoice Challenge: Cross-Lingual Speaker Verification**
 
@@ -37,6 +57,12 @@ The challenge uses the **TidyVoiceX dataset**, a curated partition from Mozilla 
 - Clearly defined training and test splits
 - Pseudonymized speaker identities for privacy protection
 
+For evaluation, the challenge provides **TidyVoiceX2_ASV**, an evaluation dataset with:
+- Approximately 2,000 speakers across 38 additional languages
+- 32 GB of audio data in .wav format (16KHz sampling frequency)
+- Two trial pair lists: tv26_eval-A.txt (4M trials) and tv26_eval-U.txt (1.28M trials)
+- Coverage of unseen languages for robust cross-lingual evaluation
+
 ## Challenge Phases
 
 The TidyVoice Challenge is organized in two main phases:
@@ -54,8 +80,8 @@ The TidyVoice Challenge is organized in two main phases:
 - Non-target pairs (different speakers, different languages)
 
 **Evaluation Phase**: Participants will evaluate and submit results for two trial pair lists:
-- **Trial List 1**: Enrollment from seen languages, test from unseen languages
-- **Trial List 2**: Both enrollment and test from unseen languages (38 unseen languages)
+- **tv26_eval-A.txt** (All languages): Mix of seen and unseen languages (All the languages)
+- **tv26_eval-U.txt** (Unseen languages): Both enrollment and test from unseen languages (38 unseen languages)
 
 These trial structures are designed to evaluate systems' ability to eliminate language effects and perform robust speaker verification across languages, including languages not encountered during training.
 

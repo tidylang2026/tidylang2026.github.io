@@ -28,7 +28,7 @@ The TidyVoice Challenge is built upon a curated data partition derived from the 
 |---------|------------|------------|--------------|------------------|--------|
 | **TidyVoiceX: Train** | 3,666 | 40 | 262K | 370 | Read |
 | **TidyVoiceX: Dev** | 808 | 40 | 60K | 87 | Read |
-| <span style="color: #6c757d;">**Final Eval Set**</span> | <span style="color: #6c757d;">2,000</span> | <span style="color: #6c757d;">38</span> | <span style="color: #6c757d;">200K</span> | <span style="color: #6c757d;">300</span> | <span style="color: #6c757d;">Read</span> |
+| **TidyVoiceX2_ASV: Eval** | 2,000 | 38 | 200K | 300 | Read |
 
 
 #### **Training Data Regulations**

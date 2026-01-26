@@ -9,7 +9,7 @@ System performance will be ranked based on the following metrics, calculated fro
 
 #### **Primary Metric: Equal Error Rate (EER)**
 
-The primary metric for ranking will be the **EER**. Evaluations will be reported on both pooled and four types of trial pair subsets to assess overall robustness and language-specific performance. In the evaluation phase, we have two different trial pair lists that all participants must evaluate and submit results for both trial lists. 
+The primary metric for ranking will be the **EER**. Evaluations will be reported on both pooled and four types of trial pair subsets to assess overall robustness and language-specific performance. In the evaluation phase, we have two different trial pair lists (**tv26_eval-A.txt** and **tv26_eval-U.txt**) that all participants must evaluate and submit results for both trial lists. 
 
 #### **Secondary Metric: Minimum Detection Cost Function (minDCF)**
 
@@ -30,7 +30,7 @@ The minimum value of this function over all possible decision thresholds is repo
 
 ## Evaluation Protocol
 
-The evaluation will be conducted with a focus on system performance, fairness, and adherence to the challenge protocol. The official test data, along with two trial pair lists for the final evaluation, will be clearly defined and documented on the challenge website.
+The evaluation will be conducted with a focus on system performance, fairness, and adherence to the challenge protocol. The official evaluation dataset (**TidyVoiceX2_ASV**), along with two trial pair lists for the final evaluation, are available on the challenge website.
 
 **Important**: Information about the language of each utterance will not be disclosed during evaluation to ensure fair assessment of language-independent systems.
 
@@ -51,9 +51,9 @@ This variation allows participants to assess how much their system can distingui
 
 In the evaluation phase, participants will be provided with **two different trial pair lists** that all participants must evaluate and submit results for:
 
-1. **Trial List 1**: Contains enrollment utterances from **seen languages** (languages present in the training and development data) and test utterances from **unseen languages** (languages not present in the training and development data).
+1. **tv26_eval-A.txt** (All languages): Contains a mix of seen and unseen languages (All the languages).
 
-2. **Trial List 2**: Contains enrollment and test utterances from **unseen languages** only. This list includes 38 unseen languages that are not present in the training and development data.
+2. **tv26_eval-U.txt** (Unseen languages): Contains enrollment and test utterances from **unseen languages** only. This list includes 38 unseen languages that are not present in the training and development data.
 
 These trial pair structures are designed to evaluate the ability of systems to eliminate language effects and perform robust speaker verification across languages, including languages that were not encountered during training.
 
