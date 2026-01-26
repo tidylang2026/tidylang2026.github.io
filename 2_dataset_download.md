@@ -18,7 +18,6 @@ The complete dataset package containing both training and development data for t
 - **TidyVoiceX_Train/**: Training dataset with multi-lingual speaker recordings
 - **TidyVoiceX_Dev/**: Development dataset for system tuning and validation
 - Speaker identity labels and language annotations
-- Audio files in standard format
 - Cross-lingual speaker samples across both splits
 
 **Download:**
@@ -68,7 +67,6 @@ The official evaluation dataset for the TidyVoice2026 Challenge.
 **Contents:**
 - **TidyVoiceX2_ASV/**: Evaluation dataset with multi-lingual speaker recordings covering approximately 40 additional languages
 - Cross-lingual speaker samples for evaluation
-- Audio files in standard format
 
 **Download:**
 - **Size:** 32 GB
@@ -94,7 +92,7 @@ The official evaluation dataset for the TidyVoice2026 Challenge.
 
 ### Evaluation Trial Files
 
-Official trial pairs for the evaluation dataset: **A** = All languages, **U** = Unseen languages.
+Official trial pairs for the evaluation dataset.
 
 **Trial Files Included:**
 - **tv26_eval-A.txt**: Evaluation trial pairs for All languages

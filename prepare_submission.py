@@ -4,6 +4,53 @@ Submission File Preparation Tool for TidyVoice 2026 challenge
 
 This script processes score files and generates submission files in the correct format.
 It supports multiple input formats and validates the data before creating the submission.
+
+--------------------------------------------------------------------------------
+EXPECTED FORMAT OF EACH INPUT FILE
+--------------------------------------------------------------------------------
+
+1) REFERENCE FILES (trial pair lists - provided by the challenge):
+   - TV26_EVAL_A_REF_FILE (e.g. tv26_eval-A.txt)
+   - TV26_EVAL_U_REF_FILE (e.g. tv26_eval-U.txt)
+
+   Format: 2 columns per line, space- or tab-separated, NO header.
+   Column 1: enrollment filename
+   Column 2: test filename
+
+   Example:
+     j8pvmcu6iuh v7l9r79188y
+     o0wrjr1rqur vgbprjwts7v
+     nsv25uueewd axs1fn4f1jr
+     drmmy1q8bp1 il2xf2tvhql
+
+   - tv26_eval-A.txt must have exactly 4,000,000 lines (trials).
+   - tv26_eval-U.txt must have exactly 1,280,000 lines (trials).
+
+--------------------------------------------------------------------------------
+
+2) SCORE FILES (your system outputs - you provide these):
+   - TV26_EVAL_A_SCORE_FILE (e.g. tv26_eval-A_score.txt)
+   - TV26_EVAL_U_SCORE_FILE (e.g. tv26_eval-U_score.txt)
+
+   Format: 3 columns per line, space- or tab-separated, NO header.
+   Either:
+     Column 1: enrollment filename   Column 2: test filename   Column 3: score (float)
+     
+   or (also accepted):
+     Column 1: score (float)   Column 2: enrollment filename   Column 3: test filename
+
+   Example (enrollment, test, score order):
+     j8pvmcu6iuh v7l9r79188y 0.0123
+     o0wrjr1rqur vgbprjwts7v 0.2345
+     nsv25uueewd axs1fn4f1jr 0.3456
+     drmmy1q8bp1 il2xf2tvhql 0.4567
+
+
+   - Same trial pairs as in the corresponding reference file, one line per trial.
+   - Score: floating-point number (higher = more likely same speaker).
+   - Filenames must match the reference file (with or without .wav); order can differ,
+     the script matches by (enroll, test) and writes scores in the reference order.
+--------------------------------------------------------------------------------
 """
 
 import sys
