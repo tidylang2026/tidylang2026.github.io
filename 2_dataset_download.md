@@ -65,7 +65,7 @@ Trial pairs file containing the evaluation protocol for the development set.
 The official evaluation dataset for the TidyVoice2026 Challenge.
 
 **Contents:**
-- **TidyVoiceX2_ASV/**: Evaluation dataset with multi-lingual speaker recordings covering approximately 40 additional languages
+- **TidyVoiceX2_ASV/**: Evaluation dataset with multi-lingual speaker recordings covering approximately 38 additional languages
 - Cross-lingual speaker samples for evaluation
 
 **Download:**
