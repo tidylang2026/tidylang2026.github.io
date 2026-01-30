@@ -43,13 +43,36 @@ The complete dataset package containing both training and validation data for th
 
 ### Trial Pairs for Validation (Development)
 
-Trial or evaluation protocol for the validation set (if applicable) will be made available on this page or via the baseline repository. Check the [Baseline Systems]({{ site.baseurl }}/7_baseline_systems) page for updates.
+Trial pairs file containing the evaluation protocol for the development/validation set.
+
+<div style="background-color: #f8f9fa; border: 2px solid #ffc107; border-radius: 8px; padding: 20px; margin: 20px 0; text-align: center;">
+  <h4 style="color: #856404; margin-bottom: 15px;">📥 Trial Pairs Download (Development)</h4>
+  <p style="margin-bottom: 15px;">Click the link below to download the trial pairs file for the validation set:</p>
+  <a href="https://drive.google.com/file/d/1OLEKewhcGi_W_gmqEDpjx-fZwQGz2kWU/view?usp=sharing" target="_blank" style="display: inline-block; background-color: #ffc107; color: #212529; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold;">
+    🔗 Download Trial Pairs (trial_pairs_dev.txt)
+  </a>
+  <p style="margin-top: 10px; font-size: 0.9em; color: #666;">
+    <em>Available via Google Drive</em>
+  </p>
+</div>
 
 <br>
 
 ### Evaluation Data
 
 **The evaluation set is not released before the evaluation phase.** Details about the evaluation data (including size, languages, format, and trial structure) are kept confidential to ensure a fair and unbiased benchmark. When the evaluation phase opens, registered participants will receive instructions on how to access the evaluation set and submit results. Please follow the [Important Dates]({{ site.baseurl }}/5_important_dates) and [Registration]({{ site.baseurl }}/10_registration) pages for updates.
+
+<br>
+
+### Trial Pairs for Evaluation
+
+Official trial pairs or evaluation protocol for the evaluation set will be released when the evaluation phase opens.
+
+<div style="background-color: #f8f9fa; border: 2px solid #6c757d; border-radius: 8px; padding: 20px; margin: 20px 0; text-align: center;">
+  <h4 style="color: #495057; margin-bottom: 15px;">📋 Evaluation Trial Pairs</h4>
+  <p style="margin-bottom: 15px;">The evaluation trial files and submission format will be published when the evaluation phase opens. No details are disclosed beforehand.</p>
+  <p style="margin: 0; font-style: italic; color: #6c757d;">Coming soon — stay tuned!</p>
+</div>
 
 <br>
 
