@@ -5,7 +5,7 @@ title: TidyLang 2026 Challenge
 
 
 
-<img src="../images/TidyVoice.png" alt="TidyLang Challenge" width="1000">
+<img src="../images/TidyLang.png" alt="TidyLang Challenge" width="1000">
 
 <br>
 
