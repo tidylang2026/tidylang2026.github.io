@@ -66,7 +66,7 @@ The challenge uses the **Tidy-X dataset**, a curated partition from Mozilla Comm
 
 ## Relevant Links
 
-- [Interspeech 2026](https://interspeech2026.org/en-AU)
+- [Odyssey 2026](https://odyssey2026.inesc-id.pt/)
 - [Mozilla Common Voice](https://datacollective.mozillafoundation.org/datasets/cmihtsewu023so207xot1iqqw)
 - **Contact: Aref Farhadipour (aref.farhadipour@uzh.ch)**
 

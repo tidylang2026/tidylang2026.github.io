@@ -42,11 +42,11 @@ Each participating team must submit results on the **evaluation set** via the **
 
 #### **8. Eligibility for Final Ranking**
 
-To be eligible for inclusion in the final ranking and challenge results, participants must submit a system description paper to the dedicated Interspeech 2026 special session.
+To be eligible for inclusion in the final ranking and challenge results, participants must submit a system description paper to the dedicated Odyssey 2026 workshop.
 
 #### **9. System Description**
 
-Each submission must be accompanied by a detailed system description paper in the [Interspeech format](https://www.overleaf.com/latex/templates/interspeech-paper-kit/svqkgcpdbxfg) that specifies:
+Each submission must be accompanied by a detailed system description paper in the [Odyssey / Interspeech format](https://www.overleaf.com/latex/templates/interspeech-paper-kit/svqkgcpdbxfg) that specifies:
 - All data usage (including external sets) and preprocessing techniques
 - Model architecture and all of its components
 - Computational resources and a comprehensive training setup
