@@ -1,37 +1,36 @@
 ---
 layout: page
-title: Download TidyVoiceX Dataset
+title: Download Tidy-X Dataset
 ---
 
-Here you can access the training data, development data, and trial pairs needed to participate in the challenge.
+Here you can access the **training data** and **validation data** needed to participate in the TidyLang 2026 Challenge. Only the official Tidy-X partition may be used from the Mozilla Common Voice dataset.
 
 <br>
 
-
 ## Dataset Components
 
-### TidyVoiceX Dataset (Train + Dev)
+### Tidy-X Dataset (Train + Validation)
 
-The complete dataset package containing both training and development data for the TidyVoice2026 Challenge.
+The complete dataset package containing both training and validation data for the TidyLang 2026 Challenge. This is the only official data from Mozilla Common Voice that participants may use.
 
 **Contents:**
-- **TidyVoiceX_Train/**: Training dataset with multi-lingual speaker recordings
-- **TidyVoiceX_Dev/**: Development dataset for system tuning and validation
+- **Tidy-X Train:** Training dataset with multi-lingual speaker recordings (40 languages)
+- **Tidy-X Valid:** Validation dataset for system tuning and validation
 - Speaker identity labels and language annotations
-- Cross-lingual speaker samples across both splits
+- Cross-lingual speaker samples across both splits (each speaker with 2–10 languages)
 
 **Download:**
-- **Size:** 50 GB
-- **Format:** .wav file with 16KHz sampling Frequency
+- **Size:** ~50 GB (approximate)
+- **Format:** .wav files, 16 kHz sampling frequency
 
 <div style="background-color: #f8f9fa; border: 2px solid #7c3aed; border-radius: 8px; padding: 20px; margin: 20px 0; text-align: center;">
-  <h4 style="color: #5b21b6; margin-bottom: 15px;">📥 TidyVoiceX Complete Dataset</h4>
+  <h4 style="color: #5b21b6; margin-bottom: 15px;">📥 Tidy-X Complete Dataset (Train + Validation)</h4>
   <p style="margin-bottom: 15px;">Click the link below to access the dataset page or download the API script:</p>
   <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 20px;">
     <a href="https://datacollective.mozillafoundation.org/datasets/cmihtsewu023so207xot1iqqw" target="_blank" style="display: inline-block; background-color: #7c3aed; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold;">
       🔗 View Dataset Page
     </a>
-    <a href="https://raw.githubusercontent.com/tidyvoice2026/tidyvoice2026.github.io/main/download_tidyvoice.py" download style="display: inline-block; background-color: #7c3aed; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold;">
+    <a href="https://raw.githubusercontent.com/tidylang2026/tidylang2026.github.io/main/download_tidyvoice.py" download style="display: inline-block; background-color: #7c3aed; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold;">
       📥 Download Script
     </a>
   </div>
@@ -42,81 +41,23 @@ The complete dataset package containing both training and development data for t
 
 <br>
 
-### Trial Pairs for Dev Data
+### Trial Pairs for Validation (Development)
 
-Trial pairs file containing the evaluation protocol for the development set.
-
-
-<div style="background-color: #f8f9fa; border: 2px solid #ffc107; border-radius: 8px; padding: 20px; margin: 20px 0; text-align: center;">
-  <h4 style="color: #856404; margin-bottom: 15px;">📥 Trial Pairs Download</h4>
-  <p style="margin-bottom: 15px;">Click the link below to download the trial pairs file:</p>
-  <a href="https://drive.google.com/file/d/1OLEKewhcGi_W_gmqEDpjx-fZwQGz2kWU/view?usp=sharing" target="_blank" style="display: inline-block; background-color: #ffc107; color: #212529; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold;">
-    🔗 Download Trial Pairs (trial_pairs_dev.txt)
-  </a>
-  <p style="margin-top: 10px; font-size: 0.9em; color: #666;">
-    <em>Available via Google Drive</em>
-  </p>
-</div>
+Trial or evaluation protocol for the validation set (if applicable) will be made available on this page or via the baseline repository. Check the [Baseline Systems]({{ site.baseurl }}/7_baseline_systems) page for updates.
 
 <br>
 
-### TidyVoiceX2_ASV (Evaluation Dataset)
+### Evaluation Data
 
-The official evaluation dataset for the TidyVoice2026 Challenge.
-
-**Contents:**
-- **TidyVoiceX2_ASV/**: Evaluation dataset with multi-lingual speaker recordings covering approximately 38 additional languages
-- Cross-lingual speaker samples for evaluation
-
-**Download:**
-- **Size:** 32 GB
-- **Format:** .wav file with 16KHz sampling Frequency
-
-<div style="background-color: #f8f9fa; border: 2px solid #dc3545; border-radius: 8px; padding: 20px; margin: 20px 0; text-align: center;">
-  <h4 style="color: #c82333; margin-bottom: 15px;">📥 TidyVoiceX2_ASV Evaluation Dataset</h4>
-  <p style="margin-bottom: 15px;">Click the link below to access the dataset page or download the API script:</p>
-  <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 20px;">
-    <a href="https://datacollective.mozillafoundation.org/datasets/cmkv32i5e02tumg07j79d3c35" target="_blank" style="display: inline-block; background-color: #dc3545; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold;">
-      🔗 View Dataset Page
-    </a>
-    <a href="https://raw.githubusercontent.com/tidyvoice2026/tidyvoice2026.github.io/main/download_tidyvoice2.py" download style="display: inline-block; background-color: #dc3545; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold;">
-      📥 Download Script
-    </a>
-  </div>
-  <p style="margin-top: 10px; font-size: 0.9em; color: #666;">
-    <em>Available via Mozilla Data Collective</em>
-  </p>
-</div>
-
-<br>
-
-### Evaluation Trial Files
-
-Official trial pairs for the evaluation dataset.
-
-**Trial Files Included:**
-- **tv26_eval-A.txt**: Evaluation trial pairs for All languages
-- **tv26_eval-U.txt**: Evaluation trial pairs for Unseen languages
-
-
-<div style="background-color: #f8f9fa; border: 2px solid #28a745; border-radius: 8px; padding: 20px; margin: 20px 0; text-align: center;">
-  <h4 style="color: #218838; margin-bottom: 15px;">📥 Evaluation Trial Files Download</h4>
-  <p style="margin-bottom: 15px;">Click the link below to download the trial pairs file (contains both tv26_eval-A.txt and tv26_eval-U.txt):</p>
-  <a href="https://drive.google.com/file/d/1tIFjYnRHGLypciX4Dl7IBX86vymAnVRP/view?usp=sharing" target="_blank" style="display: inline-block; background-color: #28a745; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold;">
-    🔗 Download Evaluation Trial Pairs (ZIP)
-  </a>
-  <p style="margin-top: 10px; font-size: 0.9em; color: #666;">
-    <em>Available via Google Drive</em>
-  </p>
-</div>
+**The evaluation set is not released before the evaluation phase.** Details about the evaluation data (including size, languages, format, and trial structure) are kept confidential to ensure a fair and unbiased benchmark. When the evaluation phase opens, registered participants will receive instructions on how to access the evaluation set and submit results. Please follow the [Important Dates]({{ site.baseurl }}/5_important_dates) and [Registration]({{ site.baseurl }}/10_registration) pages for updates.
 
 <br>
 
 ## Download Instructions
 
-1. **Registration Required:** Please complete the [registration process](https://tidyvoice2026.github.io/10_registration/) before downloading the dataset.
+1. **Registration:** Please complete the [registration process]({{ site.baseurl }}/10_registration/) before downloading the dataset.
 
-2. **Create Mozilla Data Collective API Key:** 
+2. **Create Mozilla Data Collective API Key:**
    - Visit [https://datacollective.mozillafoundation.org/api-reference](https://datacollective.mozillafoundation.org/api-reference)
    - Navigate to **Profile > API** to create your API credentials
    - Save your API key securely
@@ -127,14 +68,10 @@ Official trial pairs for the evaluation dataset.
    ```
 
 4. **Download Using Python Script:**
-   
-   Download the [`download_tidyvoice.py`](https://github.com/tidyvoice2026/tidyvoice2026.github.io/blob/main/download_tidyvoice.py) script from the dataset download section above, then:
-   
+   Download the [`download_tidyvoice.py`](https://github.com/tidylang2026/tidylang2026.github.io/blob/main/download_tidyvoice.py) script from the dataset download section above, then:
    - Replace `YOUR_API_KEY_HERE` with your Mozilla Data Collective API key
    - Update `OUTPUT_DIR` to your desired download location
-   - Run: `python download_tidyvoice.py` and `python download_tidyvoice2.py`
-
-
+   - Run: `python download_tidyvoice.py`
 
 <br>
 
@@ -143,7 +80,7 @@ Official trial pairs for the evaluation dataset.
 The dataset is organized with **speakerID** folders directly inside each dataset folder, which then contain **languageID** subfolders with the corresponding audio files for that speaker in that specific language.
 
 ```
-TidyVoiceX_Train/Dev
+Tidy-X_Train/Valid
 ├── speaker_001/
 │   ├── en/          # English recordings
 │   │   ├── file1.wav
@@ -159,17 +96,14 @@ TidyVoiceX_Train/Dev
 │   ├── it/          # Italian recordings
 │   └── ...
 └── ...
-
-
 ```
 
-**Structure Explanation:**
-- **TidyVoiceX_Train/**: Contains training data with speakerID folders directly at the root
-- **TidyVoiceX_Dev/**: Contains development data with speakerID folders directly at the root
-- Each **speakerID** folder contains all recordings for that specific speaker
+**Structure explanation:**
+- **Tidy-X Train:** Training data with speakerID folders at the root
+- **Tidy-X Valid:** Validation data with speakerID folders at the root
+- Each **speakerID** folder contains all recordings for that speaker
 - **languageID** subfolders organize recordings by language (en, fa, fr, de, it, etc.)
-- Audio files for each language are stored in their respective languageID folders
-- This structure enables easy access to cross-lingual data for the same speaker
+- This structure enables easy access to multi-lingual-per-speaker data for language recognition under controlled speaker overlap
 
 <br>
 
@@ -183,15 +117,15 @@ If you encounter any issues with the dataset download or have questions about th
 
 ## Citation
 
-If you use the TidyVoice dataset in your research, please cite:
+If you use the Tidy-X / TidyVoice dataset in your research, please cite:
 
 ```
 @misc{farhadi2026tidy,
-      title={TidyVoice: A Curated Multilingual Dataset for Speaker Verification Derived from Common Voice}, 
+      title={TidyVoice: A Curated Multilingual Dataset for Speaker Verification Derived from Common Voice},
       author={Aref Farhadipour and Jan Marquenie and Srikanth Madikeri and Eleanor Chodroff},
       year={2026},
       journal={ICASSP2026},
-      url={https://arxiv.org/abs/2601.16358}, 
+      url={https://arxiv.org/abs/2601.16358},
 }
 ```
 

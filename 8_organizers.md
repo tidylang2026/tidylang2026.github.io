@@ -3,6 +3,8 @@ layout: page
 title: Organizers
 ---
 
+The TidyLang 2026 Challenge is organized by the following team.
+
 <style>
   .organizer-container {
     margin: 20px 0;

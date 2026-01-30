@@ -1,8 +1,8 @@
 # Setup
-title:               TidyVoice2026 Challenge - Interspeech 2026
+title:               TidyLang 2026 Challenge - Interspeech 2026
 tagline:             
-description:         Cross-Lingual Speaker Verification Challenge
-url:                 https://tidyvoice2026.github.io
+description:         Speaker-Controlled Language Recognition Challenge
+url:                 https://tidylang2026.github.io
 baseurl:             ''
 paginate:            5
 permalink:           pretty
@@ -10,8 +10,8 @@ permalink:           pretty
 
 # About/contact
 author:
-  name:              TidyVoice Organizers
-  url:               https://github.com/tidyvoice-challenge
+  name:              TidyLang Organizers
+  url:               https://github.com/tidylang2026
   email:             aref.farhadipour@uzh.ch
 
 # Gems

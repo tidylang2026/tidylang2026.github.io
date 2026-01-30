@@ -5,56 +5,26 @@ title: Evaluation Plan
 
 ## Evaluation Metrics
 
-System performance will be ranked based on the following metrics, calculated from the submitted score file:
+System performance will be ranked based on the following metrics:
 
-#### **Primary Metric: Equal Error Rate (EER)**
+#### **Closed-set: Macro-averaged F1-Score / Accuracy**
 
-The primary metric for ranking will be the **EER**. Evaluations will be reported on both pooled and four types of trial pair subsets to assess overall robustness and language-specific performance. In the evaluation phase, we have two different trial pair lists (**tv26_eval-A.txt** and **tv26_eval-U.txt**) that all participants must evaluate and submit results for both trial lists. 
+For the **40-language closed-set** language identification task, we use **macro-averaged F1-score** and **accuracy** to ensure balanced performance across all languages regardless of sample size.
 
-#### **Secondary Metric: Minimum Detection Cost Function (minDCF)**
+#### **Open-set / zero-shot: Equal Error Rate (EER)**
 
-The secondary metric is the **Minimum Detection Cost Function (minDCF)**, which provides a cost-weighted combination of false acceptance and false rejection errors. It is defined as:
+For the **open-set / zero-shot** recognition task (e.g., detecting whether an utterance belongs to a specific target unseen language), we use the **Equal Error Rate (EER)**, following standard NIST LRE-style protocols.
 
-```
-DCF = Cmiss × Pmiss × Ptar + Cfa × Pfa × (1 - Ptar)
-```
-
-where:
-- *Cmiss* and *Cfa* are the costs of a miss and a false alarm, respectively
-- *Pmiss* and *Pfa* are the corresponding error probabilities
-- *Ptar* is the prior probability of a target trial
-
-The minimum value of this function over all possible decision thresholds is reported as minDCF.
-
-**Evaluation Setting**: We set *Cmiss* = *Cfa* = 1.0 and *Ptar* = 0.01. This configuration serves as our evaluation setting and is used as a secondary metric for tie-breaking and comprehensive performance analysis.
+Further details on how these metrics are applied (e.g., number of conditions, trial structure) will be specified when the evaluation phase opens.
 
 ## Evaluation Protocol
 
-The evaluation will be conducted with a focus on system performance, fairness, and adherence to the challenge protocol. The official evaluation dataset (**TidyVoiceX2_ASV**), along with two trial pair lists for the final evaluation, are available on the challenge website.
+The evaluation will be conducted with a focus on system performance, fairness, and adherence to the challenge protocol. The **official evaluation dataset and trial structure will be released when the evaluation phase opens**. No details about the evaluation set (size, languages, or trial format) are disclosed beforehand to ensure a fair and unbiased benchmark.
 
-**Important**: Information about the language of each utterance will not be disclosed during evaluation to ensure fair assessment of language-independent systems.
+**Important:** Information about the evaluation set will not be disclosed until the evaluation phase begins.
 
-## Trial Pair Structure
+## Development Phase: Validation Set
 
-### Development Phase Trial Pairs
-
-The development trial pairs cover four types of pairs to help participants understand how well their systems distinguish between speakers versus languages:
-
-- **Target pairs in the same language**: Same speaker, same language
-- **Target pairs in different languages**: Same speaker, different languages
-- **Non-target pairs in the same language**: Different speakers, same language
-- **Non-target pairs in different languages**: Different speakers, different languages
-
-This variation allows participants to assess how much their system can distinguish between speakers versus how much it is influenced by language differences.
-
-### Evaluation Phase Trial Pairs
-
-In the evaluation phase, participants will be provided with **two different trial pair lists** that all participants must evaluate and submit results for:
-
-1. **tv26_eval-A.txt** (All languages): Contains a mix of seen and unseen languages (All the languages).
-
-2. **tv26_eval-U.txt** (Unseen languages): Contains enrollment and test utterances from **unseen languages** only. This list includes 38 unseen languages that are not present in the training and development data.
-
-These trial pair structures are designed to evaluate the ability of systems to eliminate language effects and perform robust speaker verification across languages, including languages that were not encountered during training.
+During the development phase, participants can use the provided **validation set** (Tidy-X Valid) to tune and compare systems. The validation set shares the same 40 languages and multi-lingual-per-speaker structure as the training set. Validation trial or evaluation protocols (if any) will be described on the Dataset Download and Baseline Systems pages.
 
 For information about the official baseline systems, please see the [Baseline Systems]({{ site.baseurl }}/7_baseline_systems) page.

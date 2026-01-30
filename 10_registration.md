@@ -10,27 +10,23 @@ title: Registration
 
 <hr style="border: none; border-top: 2px solid #7c3aed; margin: 2em 0;">
 
-If you are registering during the Evaluation phase (26 Jan – 10 Feb), this information lets you join the competition faster.
+1. **Training and validation data:** You can download the official Tidy-X dataset (train + validation) from the [Dataset Download]({{ site.baseurl }}/2_dataset_download/) page. Only this partition from Mozilla Common Voice may be used.
 
-1. **Evaluation data:** You can download the evaluation data from [TidyVoiceX2_ASV](https://datacollective.mozillafoundation.org/datasets/cmkv32i5e02tumg07j79d3c35). The easiest way to download the files is described on the [Dataset Download](https://tidyvoice2026.github.io/2_dataset_download/) page.
+2. **Evaluation data:** The evaluation set is **not released** before the evaluation phase. Details about the evaluation data (size, languages, format, trial structure) are **confidential**. When the evaluation phase opens (see [Important Dates]({{ site.baseurl }}/5_important_dates)), registered participants will receive instructions on how to access the evaluation set and submit results.
 
-2. **Trial pairs:** The trial pairs files can be downloaded [here](https://drive.google.com/file/d/1tIFjYnRHGLypciX4Dl7IBX86vymAnVRP/view?usp=sharing). There are two trial pair files:
-   - **tv26_eval-A.txt** — trial pairs in a mix of All languages (compared to the training set)
-   - **tv26_eval-U.txt** — trial pairs where all utterances are in Unseen languages (compared to the training set)
+3. **CodaBench:** The link to the TidyLang 2026 challenge on CodaBench will be **announced when the evaluation phase opens**. At that time, you will be able to register for the evaluation and submit results. Please check this website and the Important Dates page for updates. *Coming soon — stay tuned!*
 
-3. **CodaBench:** During the evaluation phase, you can monitor the performance of your system. Please visit the [CodaBench page for the TidyVoice Challenge](https://www.codabench.org/competitions/13187/) and register for the evaluation. Each team has 5 tokens to submit the scores of their proposed systems (up to 5 submissions). The final score for each team will be based on its best-performing submission.
+4. **Submission format:** The exact submission format (file names, structure, and content) will be published when the evaluation phase opens. Please read the [Submission Guidelines]({{ site.baseurl }}/4_submission_guidelines/) for general rules and check back for the final format and any validation scripts.
 
-4. **Submission format:** Please read the [Submission Guidelines](https://tidyvoice2026.github.io/4_submission_guidelines/) carefully to understand the required format of the submission file and how to view the results (EER and minDCF) for both trial pair files. Participants must submit a single zip file containing two score files (one per trial file). Each score file must contain only the scores, in the same order as the trial pairs, without file names or headers, and must use the same names as the corresponding trial files. If the format is incorrect, CodaBench will return an error and one submission token will be used. We provide a [prepare_submission.py](https://github.com/tidyvoice2026/tidyvoice2026.github.io/blob/main/prepare_submission.py) script to build and validate your submission file; we recommend using it.
+5. **Privacy:** During the evaluation phase, participants will only see their own results until the release of the final rankings.
 
-5. **Privacy:** During the evaluation phase, participants can only see their own results. The results of other teams are not visible.
+6. **Rankings:** After the evaluation phase, we will release the final rankings. To be included, you must submit results according to the instructions published at the opening of the evaluation phase. The announcement will be made as specified in the Submission Guidelines. Participants may share their team code in their papers or with us, and we can feature it on the website.
 
-6. **Rankings:** After the evaluation phase, we will release the final rankings. There will be a separate leaderboard for each trial pair file. To be included, you must submit results for both trial pairs. The announcement will be made anonymously with an identity code. Participants may share their team code in their papers or with us, and we can feature it on the website.
-
-7. **Deadline:** The evaluation phase ends on **February 10, 2026**.
+7. **Deadline:** Key dates are listed on the [Important Dates]({{ site.baseurl }}/5_important_dates) page (e.g., result submission deadline and challenge paper deadline).
 
 Please feel free to contact us if you need any help.
 
 Good luck and enjoy the challenge!
 
 Best regards,  
-TidyVoice Organization Team
+TidyLang Organization Team

@@ -5,26 +5,35 @@ title: Challenge Description
 
 
 
-The **TidyVoice Challenge** directly addresses the critical open problem of **speaker verification under language mismatch**. The field of speaker verification has long been shaped by the NIST Speaker Recognition Evaluation (SRE), a prestigious benchmark that has driven significant technological advancements. However, despite its influence, the SRE framework presents two critical limitations in today's globalized landscape. First, the evaluation data is proprietary, which restricts accessibility and hinders reproducible research across the broader community. Second, and more crucially, the evaluations have historically focused on a limited set of languages, failing to adequately address the unique challenges of cross-lingual speaker verification for a diverse, multilingual world.
+The **TidyLang Challenge** introduces **Speaker-Controlled and Zero-Shot Language Recognition**: a challenge that targets language recognition in the realistic regime where each speaker contributes speech in multiple languages and models are tested on unseen languages. The central scientific question is: *How can we develop language recognition systems that disentangle speaker identity from linguistic structure to ensure robust generalization across individuals and languages?*
 
-We believe that by proposing a challenge built on a large-scale, public, and multilingual dataset, we can create a more inclusive and accessible benchmark. This initiative will have a great impact on advancing the field, fostering the development of more robust and equitable speaker recognition systems that perform reliably across languages.
+We aim to catalyze discussion and benchmarking around:
 
-The TidyVoice Challenge aligns perfectly with the Interspeech 2026 theme, **"Speaking Together,"** which emphasizes diversity, equity, and inclusivity in speech science and technology by extending speaker verification to new languages and naturalistic cross-lingual conditions. The challenge provides a standardized benchmark and a rigorous evaluation protocol to assess system robustness, calibration, and fairness across a wide array of languages and demographic groups. To increase fairness and safeguard privacy, the original speaker identities are pseudonymized.
+- **Representation disentanglement:** Designing training objectives that decouple speaker-specific acoustic traits from language-discriminative phonetic and phonotactic patterns.
+- **Zero-shot generalization:** Evaluating the limits of modern multilingual and self-supervised models when encountering languages absent from the training set.
+- **Mitigating shortcut learning:** Identifying and reducing the reliance on “shortcuts” (such as speaker-specific artifacts or recording conditions) to improve real-world reliability.
+- **Fairness and trustworthiness:** Ensuring that language recognition performance remains robust and independent of speaker identity, aligning with the Odyssey 2026 theme of trustworthy identity and speech technology.
+
+This proposal is closely aligned with the **Odyssey 2026** theme, *“Speech beyond words: Trustworthy Identity, Health, Emotion and more,”* by advancing the development of trustworthy, identity-invariant, and linguistically grounded speech technologies.
+
+We believe that by building this challenge on a large-scale, public, and multilingual dataset (Tidy-X) with multi-lingual-per-speaker structure, we can create a more inclusive and rigorous benchmark for language recognition. This initiative will advance the field toward systems that rely on true linguistic cues rather than speaker-specific shortcuts.
 
 #### **Why this challenge is significant?**
 
-- **Addresses a Key Scientific Gap**: While many benchmarks test speaker verification "in the wild", they often fail to disentangle the various sources of variability such as noise, channel effects, speaking style, and especially language. The TidyVoice dataset is uniquely designed to isolate the impact of language switching by offering curated data from the same speaker across different languages. This enables a focused investigation into the development of truly language-independent speaker embeddings.
+- **Addresses a key scientific gap:** Most language recognition benchmarks assume speaker identity is a nuisance variable. In reality, the same speaker often speaks multiple languages. Standard benchmarks allow models to “cheat” by using speaker-specific cues. The Tidy-X dataset is uniquely designed so that the *same speaker* appears across *multiple languages*, forcing models to disentangle language from identity.
 
-- **Promotes Fairness and Inclusivity**: The historical overreliance on English-centric datasets has been a significant bottleneck in the field. This challenge is built upon a dataset encompassing approximately 40 distinct languages and around 4,500 multilingual speakers, motivating the community to create systems that are not biased towards a single language and that perform equitably for multilingual speakers, a large and ever-growing global demographic.
+- **Multi-lingual-per-speaker evaluation:** Unlike standard language recognition benchmarks, our dataset allows for controlled trials where the same speaker appears across multiple languages, explicitly stress-testing speaker–language entanglement.
 
-- **Provides a New Public Resource**: Unlike some challenges that utilize proprietary benchmarks such as NIST SRE evaluation, the TidyVoice dataset, along with its evaluation protocols and baseline models, will be made publicly available alongside the challenge. This commitment to open science promotes reproducible research and lowers the barrier to entry for academic and industry labs worldwide to tackle the cross-lingual speaker verification problem.
+- **Hard zero-shot scenario:** We introduce evaluation conditions that include identifying a new language spoken by a known speaker, isolating the model’s ability to generalize beyond memorized identity.
 
-- **Establishes a Benchmark for Read Speech and Beyond**: By being based on the Mozilla Common Voice (MCV) corpus, this challenge specifically focuses on the domain of read speech. This controlled setting minimizes stylistic and phonetic variability, allowing for a more precise analysis of cross-lingual acoustic modeling. Prior work has already highlighted both the potential and the limitations of MCV for phonetic and speaker-related research. Building on these insights, this large-scale, cleanly-labeled, multilingual dataset of bonafide speech provides an invaluable foundation for adjacent research areas, such as the development and evaluation of robust anti-spoofing countermeasures.
+- **Pushing the boundaries of SSL:** The challenge provides a rigorous testbed for large-scale self-supervised models, moving beyond simple classification toward language-agnostic representation learning.
+
+- **Trustworthy identity alignment:** By focusing on identity-invariant language cues, this challenge directly addresses the theme of “Trustworthy Identity,” ensuring that systems do not conflate *who* is speaking with *what language* is being spoken.
 
 #### **Why this challenge is timely?**
 
-- **Growing Need for Multilingual Systems**: As speech technology becomes increasingly global, the demand for systems that work across languages has never been greater. This challenge directly addresses this need by providing a rigorous evaluation framework for cross-lingual speaker verification.
+- **Growing need for multilingual systems:** As speech technology becomes increasingly global, the demand for language recognition that works across speakers and languages has never been greater.
 
-- **Advancements in Multilingual Modeling**: Recent advances in multilingual and cross-lingual speech processing have made this an opportune time to establish benchmarks that push the boundaries of language-independent speaker recognition.
+- **Advancements in multilingual modeling:** Recent advances in multilingual and self-supervised speech processing make this an opportune time to establish benchmarks that push the boundaries of speaker-invariant language recognition.
 
-- **Open Science Movement**: The commitment to open data and reproducible research aligns with the growing movement towards more accessible and transparent scientific practices in speech technology.
+- **Open science:** The use of a public dataset (Mozilla Common Voice) and the commitment to standardized evaluation align with the movement toward more accessible and transparent scientific practices in speech technology.
