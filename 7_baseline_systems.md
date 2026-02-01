@@ -52,4 +52,3 @@ The **challenge evaluation** uses **language verification** (same-language vs di
 
 For help and technical support regarding the baseline, contact: **aref.farhadipour@uzh.ch**
 
-For general challenge questions, see [Organizers]({{ site.baseurl }}/8_organizers).
