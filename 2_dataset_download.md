@@ -60,17 +60,17 @@ Trial pairs file containing the evaluation protocol for the development/validati
 
 ### Evaluation Data
 
-**The evaluation set is not released before the evaluation phase.** Details about the evaluation data (including size, languages, format, and trial structure) are kept confidential to ensure a fair and unbiased benchmark. When the evaluation phase opens, registered participants will receive instructions on how to access the evaluation set and submit results. Please follow the [Important Dates]({{ site.baseurl }}/5_important_dates) and [Registration]({{ site.baseurl }}/10_registration) pages for updates.
+**The evaluation set is not released before the evaluation phase.** Details about the evaluation data (including size, languages, format, and trial structure) are kept confidential to ensure a fair and unbiased benchmark. **We will release the evaluation data and the evaluation trial pair lists when the evaluation phase opens.** At that time, registered participants will receive instructions on how to access the evaluation set and submit results. Please follow the [Important Dates]({{ site.baseurl }}/5_important_dates) and [Registration]({{ site.baseurl }}/10_registration) pages for updates.
 
 <br>
 
 ### Trial Pairs for Evaluation
 
-Official trial pairs or evaluation protocol for the evaluation set will be released when the evaluation phase opens.
+The evaluation trial pair list will be released together with the evaluation data when the evaluation phase opens.
 
 <div style="background-color: #f8f9fa; border: 2px solid #6c757d; border-radius: 8px; padding: 20px; margin: 20px 0; text-align: center;">
   <h4 style="color: #495057; margin-bottom: 15px;">📋 Evaluation Trial Pairs</h4>
-  <p style="margin-bottom: 15px;">The evaluation trial files and submission format will be published when the evaluation phase opens. No details are disclosed beforehand.</p>
+  <p style="margin-bottom: 15px;">We will release the evaluation data and the evaluation trial pair lists when the evaluation phase opens. The submission format will be published at that time. No details are disclosed beforehand.</p>
   <p style="margin: 0; font-style: italic; color: #6c757d;">Coming soon — stay tuned!</p>
 </div>
 

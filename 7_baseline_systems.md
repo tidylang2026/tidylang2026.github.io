@@ -3,23 +3,53 @@ layout: page
 title: Baseline Systems
 ---
 
-
-
 ## Baseline Systems
 
-To provide a strong starting point for participants and ensure a fair and reproducible evaluation, we plan to release an official baseline system for **language recognition** on the Tidy-X dataset. This system will represent a standard approach (e.g., pre-trained SSL or classifier fine-tuned on the provided data) to lower the barrier to entry and allow participants to benchmark their own methods.
+We provide an **official baseline** for the TidyLang 2026 Challenge: a complete toolbox for training and evaluating a **Language Identification (LID)** model. The baseline uses **Wav2Vec2 (Layers 17–24)** + a simple projection head + **ArcFace loss**, and achieves strong performance on the TidyLang dataset.
 
-**Baseline resources (code, recipes, and checkpoints) will be published on this page when available.** We will release training recipes, evaluation scripts, and pre-trained checkpoints (where licensing allows) to ensure long-term accessibility.
+### GitHub Repository
 
-*Baseline details will be added here as the challenge progresses. Please check back or follow the [Important Dates]({{ site.baseurl }}/5_important_dates) for updates.*
+**Code, recipes, and documentation:**  
+**[https://github.com/areffarhadi/TidyLang2026-baseline](https://github.com/areffarhadi/TidyLang2026-baseline)**
 
-<br>
+Clone the repository for training scripts, evaluation scripts, ArcFace loss implementation, and full setup instructions.
 
-### Planned Contents
+---
 
-- **Baseline architecture:** e.g., self-supervised model (XLS-R, Whisper, wav2vec2, etc.) with a language classification head, fine-tuned on Tidy-X Train
-- **Training recipe:** Scripts and configuration for reproducing the baseline
-- **Validation set results:** Macro F1 / Accuracy on Tidy-X Valid (closed-set) and any validation protocol we provide
-- **Evaluation:** Evaluation set results will be reported after the evaluation phase, in line with the challenge timeline
+### Quick Start
 
-If you have questions about baselines or evaluation scripts, please contact the organizers (see [Organizers]({{ site.baseurl }}/8_organizers)).
+1. **Setup:** Create a virtual environment, install dependencies with `pip install -r requirements.txt`. Dataset paths are pre-configured; no environment variables are required.
+2. **Train:** Run `bash train.sh` with default parameters (or override GPU, batch size, epochs, margin, scale, hidden dim as needed).
+3. **Evaluate:** Run `bash eval.sh` to evaluate with default settings.
+
+See the [repository README](https://github.com/areffarhadi/TidyLang2026-baseline) for detailed usage and optional arguments.
+
+---
+
+### Model Architecture (Summary)
+
+- **Input:** 16 kHz audio (~4 s).
+- **Backbone:** Wav2Vec2-Large; extract layers 17–24 (1024D each), aggregate with learned weights → 1024D.
+- **Projection head:** Linear → LayerNorm → GELU → Dropout(0.1) → Linear → LayerNorm → L2-normalized **256D embeddings**.
+- **Classifier:** ArcFace (margin 0.3, scale 30.0) over the number of languages.
+
+---
+
+### Baseline Results (Default Hyperparameters)
+
+| Metric | Result |
+|--------|--------|
+| **Classification (flag=2, new speakers)** | Micro Acc: 75.8%, Macro Acc: 40.3% |
+| **Cross-lingual (flag=3, known speakers, different language)** | Micro Acc: 58.5%, Macro Acc: 57.7% |
+| **Language verification EER (flag=2, same vs different language)** | EER: 23.68%, Threshold: 0.745 |
+| **Speaker verification EER (5-language trials)** | EER: 30.7%, Threshold: 0.754 |
+
+The **challenge evaluation** uses **language verification** (same-language vs different-language trial pairs, EER). The baseline reports language identification (accuracy), language verification EER, and optionally speaker verification EER for related analysis. Training uses **flag=1** data only; validation is reported on **flag=2** (new speakers) and **flag=3** (cross-lingual). The repo includes manifest/trial formats and verification trial details.
+
+---
+
+### Support
+
+For help and technical support regarding the baseline, contact: **aref.farhadipour@uzh.ch**
+
+For general challenge questions, see [Organizers]({{ site.baseurl }}/8_organizers).

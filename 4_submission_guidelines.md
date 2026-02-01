@@ -18,7 +18,7 @@ Any attempt to determine the real-world identity of a speaker, or to link speake
 
 #### **3. Scope of Tasks: Language Recognition**
 
-This challenge evaluates **spoken language recognition** (predicting the language of an utterance) on the provided splits, under closed-set and open-set/zero-shot conditions. The exact submission format (e.g., language labels, scores) will be specified when the evaluation phase opens.
+This challenge evaluates **spoken language recognition** on the provided splits. Participants **must** submit for the **closed-condition**; **open-condition** submission is **optional**. For each condition, the final evaluation consists of **two tasks**: (1) **Identification**—predicting the language of each utterance (accuracy / macro F1); (2) **Verification**—scoring trial pairs (same-language vs different-language) with results reported as EER. The exact submission format (e.g., language labels for identification, scores for verification) will be specified when the evaluation phase opens.
 
 #### **4. Data Integrity**
 
@@ -58,10 +58,10 @@ Each submission must be accompanied by a detailed system description paper in th
 **The exact submission format (file names, structure, and content) will be published when the evaluation phase opens.** At that time we will provide:
 
 - The **CodaBench competition link** for the TidyLang 2026 Challenge
-- Required file format(s) (e.g., language labels for closed-set, scores or labels for open-set)
+- Required file format(s) for both tasks: **identification** (e.g., language labels per utterance) and **verification** (e.g., scores per trial pair), as specified when the evaluation phase opens
 - Validation scripts (if any) to check submissions locally
 
-Until the evaluation phase is announced, we do not disclose details about the evaluation set or submission files. Please check back when the evaluation phase begins (see [Important Dates]({{ site.baseurl }}/5_important_dates)).
+We will release the evaluation data and the evaluation trial pair lists when the evaluation phase opens. Until then, we do not disclose details about the evaluation set or submission files. Please check back when the evaluation phase begins (see [Important Dates]({{ site.baseurl }}/5_important_dates)).
 
 <br>
 

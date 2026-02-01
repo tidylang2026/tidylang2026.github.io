@@ -31,9 +31,9 @@ By providing standardized data, open-source baselines, and a rigorous evaluation
 
 The TidyLang Challenge is a **Speaker-Controlled and Zero-Shot Language Recognition** challenge. The only permitted data from Mozilla Common Voice is the official **Tidy-X** training and validation partition; all other Common Voice data is strictly forbidden. The core task is **spoken language recognition** at the utterance level under controlled speaker-overlap conditions.
 
-**Primary evaluation conditions:**
-- **Closed-set identification:** Predict the correct language label among 40 languages seen during training (macro-averaged F1 / Accuracy).
-- **Open-set / zero-shot recognition:** Handle additional languages not seen during training; evaluated with **Equal Error Rate (EER)** following standard protocols.
+**Evaluation tasks (in both closed- and open-condition):**
+- **Identification:** Predict the correct language label for a set of utterances → reported as **accuracy** (and/or macro F1).
+- **Verification:** Score trial pairs (e.g., same vs different language) → reported as **Equal Error Rate (EER)**.
 
 The challenge uses the **Tidy-X dataset**, a curated partition from Mozilla Common Voice featuring:
 - Over 4,474 speakers across 40 languages
@@ -42,13 +42,59 @@ The challenge uses the **Tidy-X dataset**, a curated partition from Mozilla Comm
 - Clearly defined training and validation splits
 - Pseudonymized speaker identities for privacy
 
-**Evaluation set:** Details about the evaluation data (including size, languages, and trial structure) are **not disclosed** before the evaluation phase to ensure a fair and unbiased benchmark. Information will be released when the evaluation phase opens.
+**Evaluation set:** Details about the evaluation data (including size, languages, and trial structure) are **not disclosed** before the evaluation phase to ensure a fair and unbiased benchmark. We will release the evaluation data and the evaluation trial pair lists when the evaluation phase opens.
+
+---
+
+## Evaluation Conditions: Closed vs. Open
+
+Participants can submit to **two conditions**. The same **Common Voice** rule applies to both: **no additional data from the Common Voice dataset** may be used for training beyond the official Tidy-X partition.
+
+### Closed-condition
+
+- **Allowed:** Only the **official Tidy-X training (and validation) data** provided for the challenge.
+- **Not allowed:**
+  - Any other data from the Common Voice dataset.
+  - Any dataset that is **specifically designed for LID** (e.g., NIST LRE, FLEURS, VoxLingua, or similar LID-oriented corpora).
+
+**Goal:** A level playing field so that participants focus on **methodological innovation** (e.g., architecture, training strategy, loss design) rather than extra data.
+
+### Open-condition
+
+- **Allowed:** Still **no** extra Common Voice data. You **may** use **other data that are originally intended for language identification**, including public or private LID-specific datasets (e.g., NIST LRE, FLEURS, VoxLingua, or similar).
+- **Not allowed:** Any additional data from the Common Voice dataset.
+
+**Goal:** Explore how much language recognition can be improved in a **general setting** by leveraging additional LID-oriented data (public or private), while keeping the evaluation comparable and the Common Voice boundary clear.
+
+### SSL models
+
+Participants are **free to use self-supervised learning (SSL) models** (e.g., wav2vec2, XLS-R, HuBERT, WavLM, etc.) in both conditions, as long as the data rules above are respected.
+
+### Submission
+
+- **Closed-condition:** Participants **must** submit results for the closed-condition.
+- **Open-condition:** Submission is **optional**; participants may additionally submit a system trained under the open-condition rules.
+
+---
+
+## Final Evaluation (per condition)
+
+For **each condition** (closed and, if submitted, open), the **final evaluation** consists of **two tasks**:
+
+1. **Identification:** A set of utterances. Participants predict the language of each utterance. Results are reported as **accuracy** (and/or macro-averaged F1, as specified in the evaluation plan).
+2. **Verification:** A set of **trial pairs** (e.g., same-language vs different-language). Participants output a score per pair. Results are reported as **Equal Error Rate (EER)**.
+
+Rankings may be computed per task and/or per condition; details will be given when the evaluation phase opens.
+
+**During validation (development phase):** Both an **identification set** and a **verification set** (trial pairs) are provided, so participants can evaluate both tasks locally before the final evaluation phase.
+
+---
 
 ## Challenge Phases
 
-**Development Phase:** Participants use the provided **training and validation data** to develop and tune their systems. You can experiment with different approaches, architectures, and hyperparameters using the official Tidy-X splits.
+**Development Phase:** Participants use the provided **training and validation data** to develop and tune their systems. **Validation** includes both **identification** and **verification** sets, so you can measure accuracy and EER on the validation data. You can experiment with different approaches, architectures, and hyperparameters using the official Tidy-X splits.
 
-**Evaluation Phase:** When the evaluation phase opens, the evaluation set and submission procedure (including the CodaBench link) will be announced. Participants will submit results according to the guidelines published at that time. Rankings will be determined based on performance on the evaluation set.
+**Evaluation Phase:** When the evaluation phase opens, the evaluation set and submission procedure (including the CodaBench link) will be announced. Participants **must** submit results for the **closed-condition**; **open-condition** submission is optional. Results will be reported for both **identification** (accuracy) and **verification** (EER) in each condition. Rankings will be determined based on performance on the evaluation set.
 
 ## Learn More
 
