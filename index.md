@@ -31,8 +31,10 @@ The challenge uses the **Tidy-X dataset**, a curated partition from Mozilla Comm
 - Over 4,474 speakers across 40 languages
 - Each speaker with utterances in between 2 and 10 languages
 - Approximately 321,711 utterances totaling 457 hours
-- Clearly defined training and validation splits
+- Clearly defined training and validation splits (see note below)
 - Pseudonymized speaker identities for privacy
+
+**Note on splits:** The training and validation portions used in this challenge are **different from the original splits** of the Tidyvox dataset. Participants **must** follow the official manifest provided in the baseline repository: [training_manifest.txt](https://github.com/areffarhadi/TidyLang2026-baseline/blob/main/data/manifests/training_manifest.txt).
 
 **Evaluation set:** Details about the evaluation data (including size, languages, and trial structure) are **not disclosed** before the evaluation phase to ensure a fair and unbiased benchmark. We will release the evaluation data and the evaluation trial pair lists when the evaluation phase opens.
 

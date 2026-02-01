@@ -30,6 +30,8 @@ The TidyLang Challenge is built upon a curated data partition derived from the M
 
 **Important:** The use of any other data from the MCV corpus is strictly forbidden. Only the official Tidy-X training and validation partitions may be used from MCV.
 
+**Training/validation splits:** The training and validation portions used in this challenge are **different from the original splits** of the Tidyvox dataset. Participants **must** follow the official manifest provided in the baseline repository: [training_manifest.txt](https://github.com/areffarhadi/TidyLang2026-baseline/blob/main/data/manifests/training_manifest.txt).
+
 #### **Dataset statistics (training and validation only)**
 
 | Dataset        | # Spkr | # Lang | # Utt  | Duration (h) | Domain |
