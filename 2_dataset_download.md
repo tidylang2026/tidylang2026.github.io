@@ -39,20 +39,23 @@ The complete dataset package containing both training and validation data for th
   </p>
 </div>
 
+**Manifests (train and validation data portion):**  
+- [Training manifest (training_manifest.txt)](https://github.com/areffarhadi/TidyLang2026-baseline/raw/main/data/manifests/training_manifest.txt) — data portion for train and validation splits.
+
 <br>
 
-### Trial Pairs for Validation (Development)
+### Trial Pairs for Validation (Development / Verification)
 
-Trial pairs file containing the evaluation protocol for the development/validation set.
+Trial pairs file for the **verification** task on the development/validation set (language verification: same-language vs different-language pairs).
 
 <div style="background-color: #f8f9fa; border: 2px solid #ffc107; border-radius: 8px; padding: 20px; margin: 20px 0; text-align: center;">
-  <h4 style="color: #856404; margin-bottom: 15px;">📥 Trial Pairs Download (Development)</h4>
-  <p style="margin-bottom: 15px;">Click the link below to download the trial pairs file for the validation set:</p>
-  <a href="https://drive.google.com/file/d/1OLEKewhcGi_W_gmqEDpjx-fZwQGz2kWU/view?usp=sharing" target="_blank" style="display: inline-block; background-color: #ffc107; color: #212529; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold;">
-    🔗 Download Trial Pairs (trial_pairs_dev.txt)
+  <h4 style="color: #856404; margin-bottom: 15px;">📥 Trial Pairs for Verification (Validation)</h4>
+  <p style="margin-bottom: 15px;">Click the link below to download the validation trial pairs (<code>trials_val_lang.zip</code>):</p>
+  <a href="https://github.com/areffarhadi/TidyLang2026-baseline/raw/main/data/trials/trials_val_lang.zip" target="_blank" style="display: inline-block; background-color: #ffc107; color: #212529; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold;">
+    🔗 Download Trial Pairs (trials_val_lang.zip)
   </a>
   <p style="margin-top: 10px; font-size: 0.9em; color: #666;">
-    <em>Available via Google Drive</em>
+    <em>Available via <a href="https://github.com/areffarhadi/TidyLang2026-baseline/blob/main/data/trials/trials_val_lang.zip" target="_blank">TidyLang2026-baseline</a></em>
   </p>
 </div>
 
