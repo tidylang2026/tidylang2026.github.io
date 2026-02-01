@@ -9,14 +9,6 @@ title: TidyLang 2026 Challenge
 
 <br>
 
-<div style="background-color: #7c3aed; border: 3px solid #5b21b6; border-radius: 12px; padding: 30px; margin: 30px 0; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-  <h2 style="color: white; margin-bottom: 20px; font-size: 28px;">📋 Evaluation Platform (CodaBench)</h2>
-  <p style="color: white; font-size: 18px; margin-bottom: 25px;">The link to submit results on CodaBench will be announced when the evaluation phase opens. Please check back later or follow the Important Dates page for updates.</p>
-  <p style="color: white; font-size: 16px; font-style: italic;">Coming soon — stay tuned!</p>
-</div>
-
-<br>
-
 # **TidyLang Challenge: Speaker-Controlled Language Recognition**
 
 The **TidyLang Challenge** addresses the critical problem of **language recognition when the same speaker speaks multiple languages**. Language recognition systems are typically evaluated under the assumption that speaker identity is a nuisance variable. However, in realistic multilingual environments, speakers often switch languages across different contexts, creating a risk that models rely on speaker-specific traits (“shortcut learning”) rather than robust linguistic cues.
