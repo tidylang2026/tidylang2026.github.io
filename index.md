@@ -13,7 +13,7 @@ title: TidyLang 2026 Challenge
 
 The **TidyLang Challenge** addresses the critical problem of **language recognition when the same speaker speaks multiple languages**. Language recognition systems are typically evaluated under the assumption that speaker identity is a nuisance variable. However, in realistic multilingual environments, speakers often switch languages across different contexts, creating a risk that models rely on speaker-specific traits (“shortcut learning”) rather than robust linguistic cues.
 
-This challenge uses the **Tidy-X dataset**—the same curated, large-scale multilingual corpus derived from Mozilla Common Voice that emphasizes language switching, with **multi-lingual-per-speaker** data (each speaker contributes utterances in 2–10 languages). Participants will build systems that **disentangle speaker identity from language** and generalize to completely **unseen (zero-shot) languages**. Performance is evaluated with **macro-averaged F1/Accuracy** for closed-set language identification and **EER** for open-set/zero-shot recognition.
+This challenge uses the **Tidy-X dataset**—the same curated, large-scale multilingual corpus derived from Mozilla Common Voice that emphasizes language switching, with **multi-lingual-per-speaker** data (each speaker contributes utterances in 2–10 languages). Participants will build systems that **disentangle speaker identity from language** and generalize to completely **unseen (zero-shot) languages**. Performance is evaluated on **two tasks**: (1) **Language identification** on **35 seen languages** (training data) — reported as **Macro accuracy**; (2) **Unseen language recognition** on **40 unseen languages** — enrollment-based (20–65 s per enrollment ID, compare with test utterance), reported as **EER**. More detail is given in the [Evaluation Plan]({{ site.baseurl }}/6_evaluation_plan) and [Baseline Systems]({{ site.baseurl }}/7_baseline_systems) pages.
 
 By providing standardized data, open-source baselines, and a rigorous evaluation protocol, this challenge aims to drive research towards trustworthy, identity-invariant, and linguistically grounded language recognition technologies.
 
@@ -24,8 +24,10 @@ By providing standardized data, open-source baselines, and a rigorous evaluation
 The TidyLang Challenge is a **Speaker-Controlled and Zero-Shot Language Recognition** challenge. The only permitted data from Mozilla Common Voice is the official **Tidy-X** training and validation partition; all other Common Voice data is strictly forbidden. The core task is **spoken language recognition** at the utterance level under controlled speaker-overlap conditions.
 
 **Evaluation tasks (in both closed- and open-condition):**
-- **Identification:** Predict the correct language label for a set of utterances → reported as **accuracy** (and/or macro F1).
-- **Verification:** Score trial pairs (e.g., same vs different language) → reported as **Equal Error Rate (EER)**.
+- **Task 1 – Language identification (35 seen languages):** Predict the language of each utterance → reported as **Macro accuracy**.
+- **Task 2 – Unseen language recognition (40 unseen languages):** Enrollment-based: each enrollment ID has 20–65 s of audio; compare with a test utterance and output a score → reported as **Equal Error Rate (EER)**.
+
+See the [Evaluation Plan]({{ site.baseurl }}/6_evaluation_plan) and [Baseline Systems]({{ site.baseurl }}/7_baseline_systems) for protocols and trial formats.
 
 The challenge uses the **Tidy-X dataset**, a curated partition from Mozilla Common Voice featuring:
 - Over 4,474 speakers across 40 languages
@@ -75,20 +77,20 @@ Participants are **free to use self-supervised learning (SSL) models** (e.g., wa
 
 For **each condition** (closed and, if submitted, open), the **final evaluation** consists of **two tasks**:
 
-1. **Identification:** A set of utterances. Participants predict the language of each utterance. Results are reported as **accuracy** (and/or macro-averaged F1, as specified in the evaluation plan).
-2. **Verification:** A set of **trial pairs** (e.g., same-language vs different-language). Participants output a score per pair. Results are reported as **Equal Error Rate (EER)**.
+1. **Language identification (35 seen languages):** A set of utterances from the 35 training languages. Participants predict the language of each utterance. Results are reported as **Macro accuracy**.
+2. **Unseen language recognition (40 unseen languages):** Enrollment-based: each enrollment ID has several files (20–65 s total); each trial is (enrollment ID, test utterance). Participants output a similarity or probability score per trial. Results are reported as **Equal Error Rate (EER)**.
 
-Rankings may be computed per task and/or per condition; details will be given when the evaluation phase opens.
+More detail on protocols and trial formats is given in the [Evaluation Plan]({{ site.baseurl }}/6_evaluation_plan). Rankings may be computed per task and/or per condition; details will be given when the evaluation phase opens.
 
-**During validation (development phase):** Both an **identification set** and a **verification set** (trial pairs) are provided, so participants can evaluate both tasks locally before the final evaluation phase.
+**During validation (development phase):** Both an **identification set** (35 seen languages) and an **enrollment-based verification set** (enrollment IDs + trial file) are provided, so participants can evaluate both tasks locally before the final evaluation phase.
 
 ---
 
 ## Challenge Phases
 
-**Development Phase:** Participants use the provided **training and validation data** to develop and tune their systems. **Validation** includes both **identification** and **verification** sets, so you can measure accuracy and EER on the validation data. You can experiment with different approaches, architectures, and hyperparameters using the official Tidy-X splits.
+**Development Phase:** Participants use the provided **training and validation data** to develop and tune their systems. **Validation** includes both an **identification set** (35 seen languages) and an **enrollment-based verification set**, so you can measure Macro accuracy and EER on the validation data. You can experiment with different approaches, architectures, and hyperparameters using the official Tidy-X splits.
 
-**Evaluation Phase:** When the evaluation phase opens, the evaluation set and submission procedure (including the CodaBench link) will be announced. Participants **must** submit results for the **closed-condition**; **open-condition** submission is optional. Results will be reported for both **identification** (accuracy) and **verification** (EER) in each condition. Rankings will be determined based on performance on the evaluation set.
+**Evaluation Phase:** When the evaluation phase opens, the evaluation set and submission procedure (including the CodaBench link) will be announced. Participants **must** submit results for the **closed-condition**; **open-condition** submission is optional. Results will be reported for both **language identification** (Macro accuracy) and **unseen language recognition** (EER) in each condition. Rankings will be determined based on performance on the evaluation set.
 
 ## Learn More
 

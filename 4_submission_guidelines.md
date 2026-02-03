@@ -18,7 +18,7 @@ Any attempt to determine the real-world identity of a speaker, or to link speake
 
 #### **3. Scope of Tasks: Language Recognition**
 
-This challenge evaluates **spoken language recognition** on the provided splits. Participants **must** submit for the **closed-condition**; **open-condition** submission is **optional**. For each condition, the final evaluation consists of **two tasks**: (1) **Identification**—predicting the language of each utterance (accuracy / macro F1); (2) **Verification**—scoring trial pairs (same-language vs different-language) with results reported as EER. The exact submission format (e.g., language labels for identification, scores for verification) will be specified when the evaluation phase opens.
+This challenge evaluates **spoken language recognition** on the provided splits. Participants **must** submit for the **closed-condition**; **open-condition** submission is **optional**. For each condition, the final evaluation consists of **two tasks**: (1) **Language identification (35 seen languages)**—predicting the language of each utterance, reported as **Macro accuracy**; (2) **Unseen language recognition (40 unseen languages)**—enrollment-based: each enrollment ID has 20–65 s of audio; for each trial (enrollment ID, test utterance), output a score; results reported as **EER**. The exact submission format (e.g., language labels for identification, scores per trial for unseen language recognition) will be specified when the evaluation phase opens. See the [Evaluation Plan]({{ site.baseurl }}/6_evaluation_plan) and [Baseline Systems]({{ site.baseurl }}/7_baseline_systems) for full detail.
 
 #### **4. Data Integrity**
 
@@ -58,7 +58,7 @@ Each submission must be accompanied by a detailed system description paper in th
 **The exact submission format (file names, structure, and content) will be published when the evaluation phase opens.** At that time we will provide:
 
 - The **CodaBench competition link** for the TidyLang 2026 Challenge
-- Required file format(s) for both tasks: **identification** (e.g., language labels per utterance) and **verification** (e.g., scores per trial pair), as specified when the evaluation phase opens
+- Required file format(s) for both tasks: **language identification** (e.g., language labels per utterance) and **unseen language recognition** (e.g., scores per trial: enrollment ID vs test utterance), as specified when the evaluation phase opens
 - Validation scripts (if any) to check submissions locally
 
 We will release the evaluation data and the evaluation trial pair lists when the evaluation phase opens. Until then, we do not disclose details about the evaluation set or submission files. Please check back when the evaluation phase begins (see [Important Dates]({{ site.baseurl }}/5_important_dates)).

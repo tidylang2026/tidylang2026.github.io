@@ -11,10 +11,10 @@ The core task of the **TidyLang Challenge** is **utterance-level Spoken Language
 
 **Final evaluation (per condition)** includes two tasks:
 
-- **Identification:** A set of utterances → predict the language of each → reported as **accuracy** (and/or macro F1).
-- **Verification:** A set of trial pairs → output a score per pair → reported as **EER**.
+- **Task 1 – Language identification (35 seen languages):** A set of utterances from the 35 training languages → predict the language of each → reported as **Macro accuracy**.
+- **Task 2 – Unseen language recognition (40 unseen languages):** Enrollment-based: each enrollment ID has 20–65 s of audio; each trial is (enrollment ID, test utterance) → output a score per trial → reported as **EER**.
 
-During **validation** (development phase), both identification and verification sets are provided so participants can evaluate both tasks locally. See the [Evaluation Plan]({{ site.baseurl }}/6_evaluation_plan) for details.
+During **validation** (development phase), both an identification set and an enrollment-based verification set are provided so participants can evaluate both tasks locally. See the [Evaluation Plan]({{ site.baseurl }}/6_evaluation_plan) and [Baseline Systems]({{ site.baseurl }}/7_baseline_systems) for protocols and trial formats.
 
 ## Challenge Phases
 
