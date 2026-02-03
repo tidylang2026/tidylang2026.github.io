@@ -49,7 +49,7 @@ Trial pairs for the **verification** task and manifest files for the train/valid
   <h4 style="color: #856404; margin-bottom: 15px;">📥 Trial Pairs &amp; Manifests (Validation)</h4>
   <p style="margin-bottom: 15px;">Download the validation trial pairs and the training/validation manifest:</p>
   <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 15px;">
-    <a href="https://github.com/areffarhadi/TidyLang2026-baseline/raw/main/data/trials/trials_val_lang.zip" target="_blank" style="display: inline-block; background-color: #ffc107; color: #212529; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold;">
+    <a href="https://github.com/areffarhadi/TidyLang2026-baseline/tree/main/data/trials" target="_blank" style="display: inline-block; background-color: #ffc107; color: #212529; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold;">
       🔗 Trial Pairs (trials_val_lang.zip)
     </a>
     <a href="https://github.com/areffarhadi/TidyLang2026-baseline/raw/main/data/manifests/training_manifest.txt" target="_blank" style="display: inline-block; background-color: #ffc107; color: #212529; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold;">
