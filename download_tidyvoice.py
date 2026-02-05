@@ -1,42 +1,50 @@
 #!/usr/bin/env python3
+"""TidyVoice 2026 Dataset Downloader"""
 
 import os
-from datacollective import DataCollective
+import requests
+from tqdm import tqdm
+
+
 
 # --------------------------------------------------------
 #
-# 1. install the package:   pip install datacollective
-# 2. make your API Key here: https://datacollective.mozillafoundation.org/api-reference
-# 
+# 1. make your API Key here: https://datacollective.mozillafoundation.org/api-reference
+#  
+# https://datacollective.mozillafoundation.org/datasets/cmihtsewu023so207xot1iqqw
+#
 # --------------------------------------------------------
 
-API_KEY = "YOUR_API_KEY_HERE"   # <-- put your Mozila API key here
-OUTPUT_DIR = "/home/machine/TidyVoiceX_ASV"    # <-- where the dataset will be saved
-# --------------------------------------------------------
 
-DATASET_ID = "cmihtsewu023so207xot1iqqw"  # <-- Dont change it for downloading the TidyVoice Train/dev sets
+# Configuration
+API_KEY = "YOUR_API_KEY_HERE"
+OUTPUT_DIR = "./TidyVoiceX_ASV"
+DATASET_ID = "cmihtsewu023so207xot1iqqw"
 
 def main():
-    print("TidyVoice 2026 Challenge Auto-Downloader")
-    print("==========================================")
-
     os.makedirs(OUTPUT_DIR, exist_ok=True)
-    os.environ["MDC_API_KEY"] = API_KEY
-    os.environ["MDC_DOWNLOAD_PATH"] = OUTPUT_DIR
+    output_path = os.path.join(OUTPUT_DIR, "TidyVoiceX_ASV.tar.gz")
 
-    print(f"Saving to: {OUTPUT_DIR}")
+    # Get download URL
+    response = requests.post(
+        f"https://datacollective.mozillafoundation.org/api/datasets/{DATASET_ID}/download",
+        headers={"Authorization": f"Bearer {API_KEY}", "Content-Type": "application/json"}
+    )
+    response.raise_for_status()
+    download_url = response.json().get("downloadUrl")
 
-    try:
-        client = DataCollective()
-        client.get_dataset(DATASET_ID)
+    # Download file
+    response = requests.get(download_url, stream=True)
+    response.raise_for_status()
+    total_size = int(response.headers.get('content-length', 0))
 
-        print("\nDownload completed successfully!")
-        print(f"Dataset saved in: {OUTPUT_DIR}\n")
+    with open(output_path, 'wb') as f:
+        with tqdm(total=total_size, unit='B', unit_scale=True, desc="Downloading") as pbar:
+            for chunk in response.iter_content(chunk_size=8192):
+                f.write(chunk)
+                pbar.update(len(chunk))
 
-    except Exception as e:
-        print("\nERROR while downloading:")
-        print(str(e))
-        print("\nMake sure your API key and dataset ID are correct.\n")
+    print(f"\nDone! Saved to: {output_path}")
 
 if __name__ == "__main__":
     main()
