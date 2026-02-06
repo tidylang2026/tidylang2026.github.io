@@ -46,7 +46,8 @@ To be eligible for inclusion in the final ranking and challenge results, partici
 
 #### **9. System Description**
 
-Each submission must be accompanied by a detailed system description paper in the [Odyssey / Interspeech format](https://www.overleaf.com/latex/templates/interspeech-paper-kit/svqkgcpdbxfg) that specifies:
+Each submission must be accompanied by a detailed system description paper in the [Odyssey format](https://odyssey2026.inesc-id.pt/preparation-guidelines-and-templates/
+) that specifies:
 - All data usage (including external sets) and preprocessing techniques
 - Model architecture and all of its components
 - Computational resources and a comprehensive training setup
