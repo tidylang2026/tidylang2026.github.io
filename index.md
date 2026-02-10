@@ -65,7 +65,7 @@ Participants can submit to **two conditions**. The same **Common Voice** rule ap
 ### Foundation models
 
 <div style="border: 2px solid #2c3e50; background-color: #eaf2f8; padding: 16px 20px; border-radius: 8px; margin: 16px 0; font-size: 1.05em;">
-  <strong style="font-size: 1.1em;">Participants may use foundation models (e.g., Wav2vec2, XLS-R, Whisper, WavLM, etc.) in both conditions;</strong> the data restrictions above apply only to training or adaptation after pretraining, <strong>not</strong> to the model's original pretraining.
+  Participants may use <strong style="font-size: 1.1em;"> foundation models </strong> (e.g., Wav2vec2, XLS-R, Whisper, WavLM, etc.) in both conditions; the data restrictions above apply only to training or adaptation after pretraining, <strong>not</strong> to the model's original pretraining.
 </div>
 
 ### Submission
