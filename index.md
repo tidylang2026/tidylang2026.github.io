@@ -62,9 +62,11 @@ Participants can submit to **two conditions**. The same **Common Voice** rule ap
 
 **Goal:** Explore how much language recognition can be improved in a **general setting** by leveraging additional LID-oriented data (public or private), while keeping the evaluation comparable and the Common Voice boundary clear.
 
-### SSL models
+### Foundation models
 
-Participants are **free to use self-supervised learning (SSL) models** (e.g., wav2vec2, XLS-R, HuBERT, WavLM, etc.) in both conditions, as long as the data rules above are respected.
+<div style="border: 2px solid #2c3e50; background-color: #eaf2f8; padding: 16px 20px; border-radius: 8px; margin: 16px 0; font-size: 1.05em;">
+  <strong style="font-size: 1.1em;">Participants may use foundation models in both conditions;</strong> the data restrictions above apply only to training or adaptation after pretraining, <strong>not</strong> to the model's original pretraining.
+</div>
 
 ### Submission
 
