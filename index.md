@@ -62,7 +62,7 @@ Participants can submit to **two conditions**. The same **Common Voice** rule ap
 
 **Goal:** Explore how much language recognition can be improved in a **general setting** by leveraging additional LID-oriented data (public or private), while keeping the evaluation comparable and the Common Voice boundary clear.
 
-### Foundation models
+### Foundation Models
 
 <div style="border: 2px solid #2c3e50; background-color: #eaf2f8; padding: 16px 20px; border-radius: 8px; margin: 16px 0; font-size: 1.05em;">
   Participants may use <strong style="font-size: 1.1em;"> foundation models </strong> (e.g., Wav2vec2, XLS-R, Whisper, WavLM, etc.) in both conditions; the data restrictions above apply only to training or adaptation after pretraining, <strong>not</strong> to the model's original pretraining.
